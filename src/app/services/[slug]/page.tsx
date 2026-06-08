@@ -16,11 +16,14 @@ import Link from 'next/link';
 import { ArrowLeft, MessageCircle, Phone, CheckCircle } from 'lucide-react';
 
 interface ServiceDetailPageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
-export function generateMetadata({ params }: ServiceDetailPageProps): Metadata {
-  const service = SERVICES.find((s) => s.slug === params.slug);
+export async function generateMetadata({
+  params,
+}: ServiceDetailPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const service = SERVICES.find((s) => s.slug === slug);
 
   if (!service) {
     return {
@@ -36,7 +39,7 @@ export function generateMetadata({ params }: ServiceDetailPageProps): Metadata {
     openGraph: {
       title: `${service.name} | ${SITE_CONFIG.name}`,
       description: service.description,
-      url: `${SITE_CONFIG.baseUrl}/services/${service.slug}`,
+      url: `${SITE_CONFIG.baseUrl}/services/${slug}`,
       type: 'website',
     },
   };
@@ -48,8 +51,11 @@ export function generateStaticParams() {
   }));
 }
 
-export default function ServiceDetailPage({ params }: ServiceDetailPageProps) {
-  const service = SERVICES.find((s) => s.slug === params.slug);
+export default async function ServiceDetailPage({
+  params,
+}: ServiceDetailPageProps) {
+  const { slug } = await params;
+  const service = SERVICES.find((s) => s.slug === slug);
 
   if (!service) {
     return (
