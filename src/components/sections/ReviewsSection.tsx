@@ -91,7 +91,7 @@ export const ReviewsSection = ({
 
                 {/* Review Text */}
                 <Text variant="body" className="mb-4 flex-grow italic">
-                  "{review.text}"
+                  &quot;{review.text}&quot;
                 </Text>
 
                 {/* Divider */}

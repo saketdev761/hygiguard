@@ -98,8 +98,8 @@ export default function ContactPage() {
                 Send Us a Message
               </Heading>
               <Text className="mb-6">
-                Fill out the form below and we'll get back to you as soon as
-                possible. Or directly message us on WhatsApp for instant
+                Fill out the form below and we&apos;ll get back to you as soon
+                as possible. Or directly message us on WhatsApp for instant
                 response.
               </Text>
               <ContactForm />

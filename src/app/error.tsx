@@ -5,6 +5,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
+import Link from 'next/link';
 import { Heading, Text, Button, Container, Section } from '@/components/ui';
 
 interface ErrorProps {
@@ -38,11 +39,11 @@ export default function Error({ error, reset }: ErrorProps) {
             <Button variant="primary" size="lg" onClick={reset}>
               Try Again
             </Button>
-            <a href="/">
+            <Link href="/">
               <Button variant="outline" size="lg">
                 Go Home
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </Container>

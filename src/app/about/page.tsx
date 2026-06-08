@@ -81,7 +81,7 @@ export default function AboutPage() {
                 </Text>
                 <Text>
                   What started as a small initiative has grown into a trusted
-                  name in professional cleaning. We've served thousands of
+                  name in professional cleaning. We&apos;ve served thousands of
                   satisfied customers with our dedicated team of trained
                   professionals.
                 </Text>
@@ -128,8 +128,8 @@ export default function AboutPage() {
               </Heading>
               <Text>
                 To deliver professional cleaning solutions that improve hygiene,
-                health, and comfort of our customers' homes and offices. We are
-                committed to excellence, sustainability, and customer
+                health, and comfort of our customers&apos; homes and offices. We
+                are committed to excellence, sustainability, and customer
                 satisfaction in every service.
               </Text>
             </div>

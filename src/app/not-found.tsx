@@ -17,8 +17,8 @@ export default function NotFound() {
           <Heading as="h1">Page Not Found</Heading>
 
           <Text className="max-w-md mx-auto">
-            Sorry, we couldn't find the page you're looking for. The page may
-            have been moved or deleted.
+            Sorry, we couldn&apos;t find the page you&apos;re looking for. The
+            page may have been moved or deleted.
           </Text>
 
           <div className="flex gap-4 justify-center pt-6">
