@@ -89,8 +89,12 @@ export const FeaturesSection = ({
         >
           {features.map((feature, index) => {
             const IconComponent = isValidIcon(feature.icon)
-              ? Icons[feature.icon]
-              : Icons.Sparkles;
+              ? (Icons[feature.icon] as React.ComponentType<
+                  React.SVGProps<SVGSVGElement>
+                >)
+              : (Icons.Sparkles as React.ComponentType<
+                  React.SVGProps<SVGSVGElement>
+                >);
 
             return (
               <motion.div key={index} variants={itemVariants}>

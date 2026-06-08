@@ -2,28 +2,27 @@
  * Header Component
  */
 
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import Link from "next/link";
-import { Menu, X, Phone, MessageCircle } from "lucide-react";
-import { SITE_CONFIG } from "@/constants/site";
-import { Button } from "@/components/ui";
-import { useScrollPosition, useIsMobile } from "@/hooks";
-import { cn } from "@/utils";
+import React, { useState } from 'react';
+import Link from 'next/link';
+import { Menu, X, Phone, MessageCircle } from 'lucide-react';
+import { SITE_CONFIG } from '@/constants/site';
+import { Button } from '@/components/ui';
+import { useScrollPosition } from '@/hooks';
+import { cn } from '@/utils';
 
 const NAV_LINKS = [
-  { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
-  { label: "Gallery", href: "/gallery" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: 'Home', href: '/' },
+  { label: 'Services', href: '/services' },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'About', href: '/about' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const scrollPosition = useScrollPosition();
-  const isMobile = useIsMobile();
 
   const isScrolled = scrollPosition > 0;
 
@@ -31,10 +30,10 @@ export const Header = () => {
     <>
       <header
         className={cn(
-          "fixed top-0 left-0 right-0 z-40 transition-all duration-300",
+          'fixed top-0 left-0 right-0 z-40 transition-all duration-300',
           isScrolled
-            ? "bg-surface shadow-md border-b border-border"
-            : "bg-background",
+            ? 'bg-surface shadow-md border-b border-border'
+            : 'bg-background'
         )}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

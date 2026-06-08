@@ -2,9 +2,9 @@
  * Custom hook for mobile detection
  */
 
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 export function useIsMobile(breakpoint: number = 768): boolean {
   const [isMobile, setIsMobile] = useState(false);
@@ -17,10 +17,10 @@ export function useIsMobile(breakpoint: number = 768): boolean {
     };
 
     checkMobile();
-    window.addEventListener("resize", checkMobile);
+    window.addEventListener('resize', checkMobile);
 
     return () => {
-      window.removeEventListener("resize", checkMobile);
+      window.removeEventListener('resize', checkMobile);
     };
   }, [breakpoint]);
 
@@ -39,9 +39,9 @@ export function useScrollPosition(): number {
       setScrollPosition(window.scrollY);
     };
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -52,7 +52,9 @@ export function useScrollPosition(): number {
  * Custom hook for intersection observer
  */
 
-export function useInView(ref: React.RefObject<HTMLElement>): boolean {
+export function useInView<T extends HTMLElement = HTMLElement>(
+  ref: React.RefObject<T | null>
+): boolean {
   const [isInView, setIsInView] = useState(false);
 
   useEffect(() => {
@@ -67,7 +69,7 @@ export function useInView(ref: React.RefObject<HTMLElement>): boolean {
       },
       {
         threshold: 0.1,
-      },
+      }
     );
 
     observer.observe(ref.current);

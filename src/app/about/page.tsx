@@ -11,7 +11,7 @@ import {
   CTASection,
 } from '@/components/sections';
 import { Heading, Text, Container, Section } from '@/components/ui';
-import { SITE_CONFIG, WHY_CHOOSE_US, REVIEWS } from '@/constants/site';
+import { WHY_CHOOSE_US, REVIEWS } from '@/constants/site';
 
 export const metadata: Metadata = {
   title: 'About Us',

@@ -84,8 +84,12 @@ export const ServicesSection = ({
         >
           {services.map((service) => {
             const IconComponent = isValidIcon(service.icon)
-              ? Icons[service.icon]
-              : Icons.Sparkles;
+              ? (Icons[service.icon] as React.ComponentType<
+                  React.SVGProps<SVGSVGElement>
+                >)
+              : (Icons.Sparkles as React.ComponentType<
+                  React.SVGProps<SVGSVGElement>
+                >);
 
             return (
               <motion.div key={service.id} variants={itemVariants}>

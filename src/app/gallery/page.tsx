@@ -7,7 +7,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { HeroSection, CTASection } from '@/components/sections';
-import { Heading, Container, Section, Modal } from '@/components/ui';
+import { Container, Section, Modal } from '@/components/ui';
 import { GALLERY_IMAGES } from '@/data/images';
 
 const CATEGORIES = [

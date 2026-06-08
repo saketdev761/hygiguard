@@ -4,12 +4,7 @@
 
 import React from 'react';
 import { Metadata } from 'next';
-import {
-  HeroSection,
-  FeaturesSection,
-  FAQSection,
-  CTASection,
-} from '@/components/sections';
+import { HeroSection, FAQSection, CTASection } from '@/components/sections';
 import { Heading, Text, Container, Section, Button } from '@/components/ui';
 import { SERVICES, SITE_CONFIG, FAQ } from '@/constants/site';
 import Link from 'next/link';

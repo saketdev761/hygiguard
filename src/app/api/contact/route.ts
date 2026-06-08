@@ -9,7 +9,7 @@ import { validateContactForm } from '@/lib/validation';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, phone, location, service, message } = body;
+    const { name, phone, message } = body;
 
     // Validate form data
     const errors = validateContactForm({
