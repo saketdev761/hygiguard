@@ -1,0 +1,33 @@
+{
+  "name": "hygiguard-solutions",
+  "version": "1.0.0",
+  "description": "Professional Cleaning Services - HygiGuard Solutions",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "react": "^19.0.0-rc-01ad3d25-20250519",
+    "react-dom": "^19.0.0-rc-01ad3d25-20250519",
+    "next": "^15.0.0",
+    "framer-motion": "^11.0.3",
+    "lucide-react": "^0.408.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.32",
+    "autoprefixer": "^10.4.16",
+    "@types/react": "^19.0.0-rc-01ad3d25-20250519",
+    "@types/react-dom": "^19.0.0-rc-01ad3d25-20250519",
+    "@types/node": "^20.10.6",
+    "prettier": "^3.1.1",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^15.0.0"
+  }
+}

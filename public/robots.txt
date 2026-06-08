@@ -1,0 +1,22 @@
+/**
+ * Robots.txt - Search engine crawling configuration
+ */
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /.well-known/
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+
+# Specific rules for Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Respect crawl-delay
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://hygiguardsolutions.com/sitemap.xml
