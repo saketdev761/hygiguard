@@ -95,7 +95,7 @@ export const CTASection = ({
               <Button
                 variant="outline"
                 size="lg"
-                className="border-white text-white hover:bg-white hover:text-primary flex items-center gap-2 min-w-max"
+                className="!border-white text-white hover:bg-white hover:text-primary flex items-center gap-2 min-w-max"
               >
                 <Phone className="w-5 h-5" />
                 {secondaryButtonText}

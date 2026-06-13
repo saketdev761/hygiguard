@@ -1,47 +1,47 @@
-/**
- * API Route for form submissions (optional)
- * This can be used to send emails or store form data
- */
-
 import { NextRequest, NextResponse } from 'next/server';
-import { validateContactForm } from '@/lib/validation';
+import { Resend } from 'resend';
+import { bookingEmailTemplate } from '@/lib/emails/booking-template';
+import { SITE_CONFIG } from '@/constants/site';
 
-export async function POST(request: NextRequest) {
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+export async function POST(req: NextRequest) {
   try {
-    const body = await request.json();
-    const { name, phone, message } = body;
+    const { name, phone, location, service, message } = await req.json();
 
-    // Validate form data
-    const errors = validateContactForm({
-      name,
-      phone,
-      message,
-    });
-
-    if (Object.keys(errors).length > 0) {
-      return NextResponse.json({ success: false, errors }, { status: 400 });
+    if (!name || !phone || !location || !service) {
+      return NextResponse.json(
+        { error: 'Missing required fields.' },
+        { status: 400 }
+      );
     }
 
-    // Here you could:
-    // 1. Send an email notification
-    // 2. Store the data in a database
-    // 3. Send to a CRM system
-    // 4. Create a task/ticket in your system
+    const html = bookingEmailTemplate({
+      name,
+      phone,
+      location,
+      service,
+      message,
+      whatsapp: SITE_CONFIG.whatsapp,
+    });
 
-    // For now, we'll just return success
-    // In production, implement proper email/database functionality
+    const { data, error } = await resend.emails.send({
+      from: 'HygiGuard Booking <onboarding@resend.dev>',
+      to: [process.env.CONTACT_EMAIL_TO!],
+      subject: `New Service Booking Request from ${name}`,
+      html,
+    });
 
+    if (error) {
+      console.error('Resend error:', error);
+      return NextResponse.json({ error: error.message }, { status: 500 });
+    }
+
+    return NextResponse.json({ success: true, id: data?.id });
+  } catch (err) {
+    console.error('Unexpected error:', err);
     return NextResponse.json(
-      {
-        success: true,
-        message: 'Form submitted successfully. We will contact you shortly.',
-      },
-      { status: 200 }
-    );
-  } catch (error) {
-    console.error('Form submission error:', error);
-    return NextResponse.json(
-      { success: false, message: 'An error occurred. Please try again.' },
+      { error: 'Something went wrong.' },
       { status: 500 }
     );
   }

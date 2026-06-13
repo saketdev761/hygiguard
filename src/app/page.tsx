@@ -71,11 +71,11 @@ export default function HomePage() {
       />
 
       {/* Reviews Section */}
-      <ReviewsSection
+      {/* <ReviewsSection
         title="What Our Customers Say"
         description="Real reviews from happy customers across Lucknow"
         reviews={REVIEWS}
-      />
+      /> */}
 
       {/* Service Areas Section */}
       <ServiceAreasSection

@@ -9,27 +9,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-  /* Primary Colors - Deep Blue */
-  --primary: 210 100% 50.2%;
-  --primary-light: 210 86% 37%;
+  /* Primary Colors - Hygiguard Deep Blue */
+  --primary: 215 82% 32%; /* #0B4F8A */
+  --primary-light: 210 90% 45%; /* #1677D2 */
 
-  /* Secondary Colors - Fresh Green */
-  --secondary: 142 72% 29%;
-  --secondary-light: 142 71% 45%;
+  /* Secondary Colors - Hygiguard Green */
+  --secondary: 142 65% 35%; /* #1F8B45 */
+  --secondary-light: 142 70% 45%; /* #24C467 */
 
   /* Neutral Colors */
-  --background: 210 40% 98%;
+  --background: 210 35% 97%; /* soft blue white */
   --surface: 0 0% 100%;
 
   /* Text Colors */
-  --text-primary: 217 32.6% 17.5%;
-  --text-secondary: 215 16.3% 46.9%;
+  --text-primary: 215 35% 18%; /* dark navy */
+  --text-secondary: 215 18% 45%;
 
   /* Border Color */
-  --border: 214 31.8% 91.4%;
+  --border: 210 25% 88%;
 
   /* Status Colors */
-  --success: 142 71% 29%;
+  --success: 142 65% 35%;
   --warning: 38 92% 50%;
   --danger: 0 84% 60%;
 
@@ -37,10 +37,10 @@
   --radius: 16px;
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --shadow-sm: 0 1px 2px 0 rgba(11, 79, 138, 0.08);
+  --shadow-md: 0 4px 6px -1px rgba(11, 79, 138, 0.12);
+  --shadow-lg: 0 10px 15px -3px rgba(11, 79, 138, 0.15);
+  --shadow-xl: 0 20px 25px -5px rgba(11, 79, 138, 0.18);
 
   /* Transitions */
   --transition-fast: 150ms ease-in-out;

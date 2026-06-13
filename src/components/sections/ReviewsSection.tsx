@@ -32,6 +32,14 @@ export const ReviewsSection = ({
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);
 
+  const formatDate = (date: string) => {
+    const d = new Date(date);
+
+    return `${String(d.getDate()).padStart(2, '0')}/${String(
+      d.getMonth() + 1
+    ).padStart(2, '0')}/${d.getFullYear()}`;
+  };
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -107,7 +115,7 @@ export const ReviewsSection = ({
                     <Text variant="caption">{review.location}</Text>
                   </div>
                   <Text variant="small" className="text-text-secondary mt-1">
-                    {new Date(review.date).toLocaleDateString()}
+                    {formatDate(review.date)}
                   </Text>
                 </div>
               </Card>

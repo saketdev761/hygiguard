@@ -51,21 +51,31 @@ export const ContactForm = ({ onSubmit }: ContactFormProps) => {
     setErrorMessage('');
 
     try {
-      // Send WhatsApp message
-      const message = `Hello, I would like to book a service:\n\nName: ${formData.name}\nPhone: ${formData.phone}\nLocation: ${formData.location}\nService: ${formData.service}\n\nMessage: ${formData.message}`;
-      const encodedMessage = encodeURIComponent(message);
-      const whatsappUrl = `https://wa.me/${SITE_CONFIG.whatsapp.replace(/\D/g, '')}?text=${encodedMessage}`;
+      // 1. Send email via Resend
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
 
-      // Call the callback if provided
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || 'Failed to send email');
+      }
+
+      // 2. Send WhatsApp message
+      //   const message = `Hello, I would like to book a service:\n\nName: ${formData.name}\nPhone: ${formData.phone}\nLocation: ${formData.location}\nService: ${formData.service}\n\nMessage: ${formData.message}`;
+      //   const encodedMessage = encodeURIComponent(message);
+      // const whatsappUrl = `https://wa.me/${SITE_CONFIG.whatsapp.replace(/\D/g, '')}?text=${encodedMessage}`;
+
       if (onSubmit) {
         onSubmit(formData);
       }
 
-      // Redirect to WhatsApp
-      window.open(whatsappUrl, '_blank');
+      //   window.open(whatsappUrl, '_blank');
 
       setSuccessMessage(
-        'Redirecting to WhatsApp. Your message has been prepared!'
+        'Your request has been sent! We will contact you shortly.'
       );
       setFormData({
         name: '',
@@ -75,7 +85,6 @@ export const ContactForm = ({ onSubmit }: ContactFormProps) => {
         message: '',
       });
 
-      // Clear success message after 3 seconds
       setTimeout(() => {
         setSuccessMessage('');
       }, 3000);
@@ -219,7 +228,7 @@ export const ContactForm = ({ onSubmit }: ContactFormProps) => {
         isLoading={isLoading}
         className="w-full"
       >
-        Send Message on WhatsApp
+        Submit Request
       </Button>
 
       <Text variant="caption" className="text-center">

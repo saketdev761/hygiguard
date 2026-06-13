@@ -6,6 +6,20 @@ import type { Metadata } from 'next';
 import { SITE_CONFIG } from '@/constants/site';
 import { Header, Footer, FloatingCTA } from '@/components/layout';
 import '@/styles/globals.css';
+import { Inter, Poppins } from 'next/font/google';
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+});
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-poppins',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.baseUrl),
@@ -67,7 +81,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
       </head>
-      <body>
+      <body className={`${inter.variable} ${poppins.variable} antialiased`}>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
