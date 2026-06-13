@@ -9,7 +9,6 @@ import {
   ServicesSection,
   HowItWorksSection,
   FeaturesSection,
-  ReviewsSection,
   ServiceAreasSection,
   FAQSection,
   CTASection,
@@ -19,7 +18,6 @@ import {
   SERVICES,
   WHY_CHOOSE_US,
   HOW_IT_WORKS,
-  REVIEWS,
   FAQ,
 } from '@/constants/site';
 import { BEFORE_AFTER_IMAGES } from '@/data/images';
