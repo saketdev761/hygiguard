@@ -34,15 +34,6 @@ const nextConfig = {
       },
     ];
   },
-  redirects: async () => {
-    return [
-      {
-        source: '/services',
-        destination: '/services/sofa-cleaning',
-        permanent: false,
-      },
-    ];
-  },
 };
 
 module.exports = nextConfig;

@@ -91,10 +91,58 @@ export const SERVICES = [
     name: 'Sofa Cleaning',
     icon: 'Armchair',
     slug: 'sofa-cleaning',
+
+    image:
+      'https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNmEyZTY0ZTg2NjRjODE5MThiNDMzY2RhOGZkYmVlYWM6ZmlsZV8wMDAwMDAwMDNjOWM3MjA3OThjNDIxOGE5OWVkNjI3ZSIsInRzIjoiMjA2MTgiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6Ijc4Y2I4MmNiMzY0ZjdmMTliYWY4NmFlNTVhNDJjMjg4MDk5ZmQwOGJkNmIyY2E4NzViMTRmZTAxNTFiN2ZmYjgiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY2RuIjpudWxsLCJmbiI6bnVsbCwiY2QiOm51bGwsImNwIjpudWxsLCJtYSI6bnVsbH0=',
+
     shortDescription:
       'Deep clean and refresh your sofas with our professional cleaning process.',
+
     description:
       'Transform your sofas with our professional deep cleaning service. We use eco-friendly chemicals and advanced equipment to remove dirt, stains, and allergens.',
+
+    pricing: {
+      startingFrom: 699,
+
+      items: [
+        {
+          name: 'Fabric Sofa Cleaning',
+          image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc',
+
+          variants: [
+            {
+              name: '1 Seater Sofa',
+              price: 299,
+              originalPrice: 399,
+            },
+            {
+              name: '3 Seater Sofa',
+              price: 699,
+              originalPrice: 899,
+            },
+            {
+              name: 'L Shape Sofa',
+              price: 1299,
+              originalPrice: 1699,
+            },
+          ],
+        },
+
+        {
+          name: 'Leather Sofa Cleaning',
+          image: 'https://images.unsplash.com/photo-1618220179428-22790b461013',
+
+          variants: [
+            {
+              name: '3 Seater Sofa',
+              price: 899,
+              originalPrice: 1199,
+            },
+          ],
+        },
+      ],
+    },
+
     benefits: [
       'Removes deep-set stains and odors',
       'Extends sofa lifespan',
@@ -102,6 +150,7 @@ export const SERVICES = [
       'Restores original color and texture',
       'Safe for all fabric types',
     ],
+
     process: [
       'Inspection and stain assessment',
       'Vacuuming and pre-treatment',
@@ -109,106 +158,176 @@ export const SERVICES = [
       'Deodorization and drying',
       'Final inspection',
     ],
-    price: 'Starting from ₹999',
+
+    price: 'Starting from ₹699',
   },
+
   {
     id: 'mattress-cleaning',
     name: 'Mattress Cleaning',
     icon: 'Bed',
     slug: 'mattress-cleaning',
+
+    image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85',
+
     shortDescription:
       'Professional mattress cleaning for a healthier sleep environment.',
+
     description:
-      'Ensure better sleep with our comprehensive mattress cleaning service. We eliminate dust mites, bacteria, and allergens.',
+      'Ensure better sleep with our comprehensive mattress cleaning service.',
+
+    pricing: {
+      startingFrom: 499,
+
+      items: [
+        {
+          name: 'Single Mattress',
+          image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85',
+
+          variants: [
+            {
+              name: 'Single Side',
+              price: 499,
+              originalPrice: 699,
+            },
+            {
+              name: 'Both Side',
+              price: 799,
+              originalPrice: 999,
+            },
+          ],
+        },
+
+        {
+          name: 'Double Mattress',
+          image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304',
+
+          variants: [
+            {
+              name: 'Both Side',
+              price: 999,
+              originalPrice: 1299,
+            },
+          ],
+        },
+      ],
+    },
+
     benefits: [
       'Removes dust mites and allergens',
-      'Eliminates bacteria and microbes',
-      'Reduces sleep disruptions',
-      'Extends mattress lifespan',
-      'Promotes better sleep hygiene',
+      'Eliminates bacteria',
+      'Improves sleep hygiene',
+      'Extends mattress life',
     ],
+
     process: [
-      'Dust mite removal using UV technology',
-      'Deep vacuuming and extraction',
-      'Stain treatment and cleaning',
+      'Inspection',
+      'Deep vacuuming',
+      'Stain treatment',
       'Sanitization',
-      'Quick-drying process',
+      'Drying',
     ],
-    price: 'Starting from ₹1,499',
+
+    price: 'Starting from ₹499',
   },
+
   {
     id: 'carpet-cleaning',
     name: 'Carpet Cleaning',
     icon: 'Waves',
     slug: 'carpet-cleaning',
+
+    image: 'https://images.unsplash.com/photo-1600166898405-da9535204843',
+
     shortDescription:
       'Restore the beauty of your carpets with professional deep cleaning.',
+
     description:
-      'Our carpet cleaning service removes dirt, allergens, and stains while preserving the integrity of your carpets.',
-    benefits: [
-      'Removes embedded dirt and allergens',
-      'Eliminates odors and stains',
-      'Restores carpet appearance',
-      'Safe for all carpet types',
-      'Extends carpet lifespan',
-    ],
-    process: [
-      'Inspection and stain pre-treatment',
-      'Thorough vacuuming',
-      'Hot water extraction',
-      'Spot treatment for stubborn stains',
-      'Drying and deodorization',
-    ],
-    price: 'Starting from ₹599 per sq.ft',
+      'Our carpet cleaning service removes dirt, allergens, and stains.',
+
+    pricing: {
+      startingFrom: 399,
+
+      items: [
+        {
+          name: 'Home Carpet',
+
+          image: 'https://images.unsplash.com/photo-1600166898405-da9535204843',
+
+          variants: [
+            {
+              name: 'Small Carpet',
+              price: 399,
+              originalPrice: 599,
+            },
+            {
+              name: 'Large Carpet',
+              price: 1299,
+              originalPrice: 1699,
+            },
+          ],
+        },
+      ],
+    },
+
+    benefits: ['Removes embedded dirt', 'Removes odor', 'Restores carpet look'],
+
+    process: ['Inspection', 'Vacuuming', 'Deep cleaning', 'Drying'],
+
+    price: 'Starting from ₹399',
   },
+
   {
     id: 'chair-cleaning',
     name: 'Chair Cleaning',
     icon: 'Chair',
     slug: 'chair-cleaning',
+
+    image: 'https://images.unsplash.com/photo-1503602642458-232111445657',
+
     shortDescription: 'Specialized cleaning for office and dining chairs.',
-    description:
-      'Keep your chairs fresh and hygienic with our professional chair cleaning service.',
-    benefits: [
-      'Removes stains and odors',
-      'Sanitizes seating surface',
-      'Extends chair lifespan',
-      'Maintains upholstery quality',
-      'Improves overall appearance',
-    ],
-    process: [
-      'Assessment of chair material',
-      'Vacuuming and dust removal',
-      'Stain pre-treatment',
-      'Deep cleaning extraction',
-      'Sanitization and drying',
-    ],
-    price: 'Starting from ₹299 per chair',
-  },
-  {
-    id: 'deep-cleaning',
-    name: 'Deep Cleaning',
-    icon: 'Sparkles',
-    slug: 'deep-cleaning',
-    shortDescription:
-      'Comprehensive deep cleaning for your entire home or office.',
-    description:
-      'Our complete deep cleaning service covers all upholstered items and surfaces for a fresh, hygienic environment.',
-    benefits: [
-      'Complete home/office refresh',
-      'Eliminates allergens',
-      'Improves air quality',
-      'Removes hidden dirt and bacteria',
-      'Cost-effective solution',
-    ],
-    process: [
-      'Full assessment of property',
-      'Sofa and furniture cleaning',
-      'Mattress and carpet cleaning',
-      'General surface sanitization',
-      'Final quality check',
-    ],
-    price: 'Custom pricing based on requirements',
+
+    description: 'Keep your chairs fresh and hygienic.',
+
+    pricing: {
+      startingFrom: 99,
+
+      items: [
+        {
+          name: 'Dining Chair',
+
+          image: 'https://images.unsplash.com/photo-1503602642458-232111445657',
+
+          variants: [
+            {
+              name: 'Per Chair',
+              price: 99,
+              originalPrice: 149,
+            },
+          ],
+        },
+
+        {
+          name: 'Office Chair',
+
+          image: 'https://images.unsplash.com/photo-1505797149-43b0069ec26b',
+
+          variants: [
+            {
+              name: 'Per Chair',
+              price: 199,
+              originalPrice: 299,
+            },
+          ],
+        },
+      ],
+    },
+
+    benefits: ['Removes stains', 'Sanitizes seating', 'Maintains upholstery'],
+
+    process: ['Material inspection', 'Dust removal', 'Deep cleaning', 'Drying'],
+
+    price: 'Starting from ₹99',
   },
 ];
 

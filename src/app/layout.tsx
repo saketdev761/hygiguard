@@ -5,6 +5,7 @@
 import type { Metadata } from 'next';
 import { SITE_CONFIG } from '@/constants/site';
 import { Header, Footer, FloatingCTA } from '@/components/layout';
+import { CartProvider } from '@/context/CartContext';
 import '@/styles/globals.css';
 import { Inter, Poppins } from 'next/font/google';
 
@@ -82,10 +83,12 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={`${inter.variable} ${poppins.variable} antialiased`}>
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <FloatingCTA />
+        <CartProvider>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <FloatingCTA />
+        </CartProvider>
       </body>
     </html>
   );

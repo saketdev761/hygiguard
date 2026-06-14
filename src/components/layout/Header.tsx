@@ -6,9 +6,10 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Phone, MessageCircle } from 'lucide-react';
+import { Menu, X, Phone, MessageCircle, ShoppingCart } from 'lucide-react';
 import { SITE_CONFIG } from '@/constants/site';
 import { Button } from '@/components/ui';
+import { useCart } from '@/context/CartContext';
 import { useScrollPosition } from '@/hooks';
 import { cn } from '@/utils';
 
@@ -23,6 +24,7 @@ const NAV_LINKS = [
 export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const scrollPosition = useScrollPosition();
+  const { itemCount } = useCart();
 
   const isScrolled = scrollPosition > 0;
 
@@ -62,6 +64,18 @@ export const Header = () => {
 
             {/* Desktop CTA Buttons */}
             <div className="hidden md:flex items-center gap-3">
+              <Link
+                href="/cart"
+                className="relative inline-flex items-center justify-center w-10 h-10 rounded-lg border border-border text-primary hover:bg-background transition-colors"
+                aria-label={`Cart with ${itemCount} item${itemCount === 1 ? '' : 's'}`}
+              >
+                <ShoppingCart className="w-5 h-5" />
+                {itemCount > 0 && (
+                  <span className="absolute -top-2 -right-2 min-w-5 h-5 px-1 rounded-full bg-secondary text-white text-xs font-bold flex items-center justify-center">
+                    {itemCount}
+                  </span>
+                )}
+              </Link>
               <a
                 href={SITE_CONFIG.whatsappLink}
                 target="_blank"
@@ -116,6 +130,21 @@ export const Header = () => {
                   {link.label}
                 </Link>
               ))}
+              <Link
+                href="/cart"
+                className="flex items-center justify-between px-4 py-2 text-text-primary hover:bg-background rounded-lg transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <span className="flex items-center gap-2">
+                  <ShoppingCart className="w-4 h-4" />
+                  Cart
+                </span>
+                {itemCount > 0 && (
+                  <span className="min-w-5 h-5 px-1 rounded-full bg-secondary text-white text-xs font-bold flex items-center justify-center">
+                    {itemCount}
+                  </span>
+                )}
+              </Link>
               <div className="px-4 py-2 space-y-2">
                 <a
                   href={SITE_CONFIG.whatsappLink}
