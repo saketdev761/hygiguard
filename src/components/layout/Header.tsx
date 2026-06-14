@@ -34,6 +34,7 @@ export const Header = () => {
         href="/cart"
         className="relative inline-flex items-center justify-center w-9 h-9 md:w-10 md:h-10 rounded-lg border border-border text-primary hover:bg-background transition-colors"
         aria-label={`Cart with ${itemCount} item${itemCount === 1 ? '' : 's'}`}
+        onClick={() => setIsMobileMenuOpen(false)}
       >
         <ShoppingCart className="w-4 h-4 md:w-5 md:h-5" />
         {itemCount > 0 && (
