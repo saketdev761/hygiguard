@@ -2,8 +2,8 @@
  * Footer Component
  */
 
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 import {
   Phone,
   Mail,
@@ -14,8 +14,8 @@ import {
   Linkedin,
   Youtube,
   MessageCircle,
-} from "lucide-react";
-import { SITE_CONFIG } from "@/constants/site";
+} from 'lucide-react';
+import { SITE_CONFIG, SERVICES } from '@/constants/site';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -87,46 +87,16 @@ export const Footer = () => {
           <div>
             <h4 className="text-base font-bold mb-4">Services</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>
-                <Link
-                  href="/services/sofa-cleaning"
-                  className="hover:text-secondary transition-colors"
-                >
-                  Sofa Cleaning
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/mattress-cleaning"
-                  className="hover:text-secondary transition-colors"
-                >
-                  Mattress Cleaning
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/carpet-cleaning"
-                  className="hover:text-secondary transition-colors"
-                >
-                  Carpet Cleaning
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/chair-cleaning"
-                  className="hover:text-secondary transition-colors"
-                >
-                  Chair Cleaning
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/deep-cleaning"
-                  className="hover:text-secondary transition-colors"
-                >
-                  Deep Cleaning
-                </Link>
-              </li>
+              {SERVICES.map((service) => (
+                <li key={service.slug}>
+                  <Link
+                    href={`/services/${service.slug}`}
+                    className="hover:text-secondary transition-colors"
+                  >
+                    {service.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -231,8 +201,8 @@ export const Footer = () => {
           <p className="mt-2">
             <Link href="#" className="hover:text-secondary transition-colors">
               Privacy Policy
-            </Link>{" "}
-            |{" "}
+            </Link>{' '}
+            |{' '}
             <Link href="#" className="hover:text-secondary transition-colors">
               Terms of Service
             </Link>
