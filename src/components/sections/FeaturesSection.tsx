@@ -21,6 +21,7 @@ interface FeaturesSectionProps {
   description?: string;
   features: FeatureItem[];
   columns?: 2 | 3 | 4 | 6;
+  background?: string;
 }
 
 const isValidIcon = (name: string): name is keyof typeof Icons => {
@@ -32,6 +33,7 @@ export const FeaturesSection = ({
   description,
   features,
   columns = 3,
+  background = 'bg-background',
 }: FeaturesSectionProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);
@@ -63,7 +65,7 @@ export const FeaturesSection = ({
   }[columns];
 
   return (
-    <section ref={ref} className="py-16 md:py-24 lg:py-32 bg-surface">
+    <section ref={ref} className={`py-16 md:py-24 lg:py-32 ${background}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-12 md:mb-16"

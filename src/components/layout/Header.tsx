@@ -28,6 +28,23 @@ export const Header = () => {
 
   const isScrolled = scrollPosition > 0;
 
+  const ShoppingcartTab = () => {
+    return (
+      <Link
+        href="/cart"
+        className="relative inline-flex items-center justify-center w-9 h-9 md:w-10 md:h-10 rounded-lg border border-border text-primary hover:bg-background transition-colors"
+        aria-label={`Cart with ${itemCount} item${itemCount === 1 ? '' : 's'}`}
+      >
+        <ShoppingCart className="w-4 h-4 md:w-5 md:h-5" />
+        {itemCount > 0 && (
+          <span className="absolute -top-1.5 -right-1.5 md:-top-2 md:-right-2 min-w-4 h-4 md:min-w-5 md:h-5 px-1 rounded-full bg-secondary text-white text-[10px] md:text-xs font-bold flex items-center justify-center">
+            {itemCount}
+          </span>
+        )}
+      </Link>
+    );
+  };
+
   return (
     <>
       <header
@@ -64,18 +81,7 @@ export const Header = () => {
 
             {/* Desktop CTA Buttons */}
             <div className="hidden md:flex items-center gap-3">
-              <Link
-                href="/cart"
-                className="relative inline-flex items-center justify-center w-10 h-10 rounded-lg border border-border text-primary hover:bg-background transition-colors"
-                aria-label={`Cart with ${itemCount} item${itemCount === 1 ? '' : 's'}`}
-              >
-                <ShoppingCart className="w-5 h-5" />
-                {itemCount > 0 && (
-                  <span className="absolute -top-2 -right-2 min-w-5 h-5 px-1 rounded-full bg-secondary text-white text-xs font-bold flex items-center justify-center">
-                    {itemCount}
-                  </span>
-                )}
-              </Link>
+              <ShoppingcartTab />
               <a
                 href={SITE_CONFIG.whatsappLink}
                 target="_blank"
@@ -103,18 +109,21 @@ export const Header = () => {
             </div>
 
             {/* Mobile Menu Button */}
-            <button
-              className="md:hidden p-2 hover:bg-background rounded-lg transition-colors"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label="Toggle menu"
-              aria-expanded={isMobileMenuOpen}
-            >
-              {isMobileMenuOpen ? (
-                <X className="w-6 h-6 text-text-primary" />
-              ) : (
-                <Menu className="w-6 h-6 text-text-primary" />
-              )}
-            </button>
+            <div className="flex items-center gap-2 md:hidden">
+              <ShoppingcartTab />
+              <button
+                className="p-2 hover:bg-background rounded-lg transition-colors"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                aria-label="Toggle menu"
+                aria-expanded={isMobileMenuOpen}
+              >
+                {isMobileMenuOpen ? (
+                  <X className="w-6 h-6 text-text-primary" />
+                ) : (
+                  <Menu className="w-6 h-6 text-text-primary" />
+                )}
+              </button>
+            </div>
           </div>
 
           {/* Mobile Navigation Drawer */}
@@ -130,21 +139,6 @@ export const Header = () => {
                   {link.label}
                 </Link>
               ))}
-              <Link
-                href="/cart"
-                className="flex items-center justify-between px-4 py-2 text-text-primary hover:bg-background rounded-lg transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <span className="flex items-center gap-2">
-                  <ShoppingCart className="w-4 h-4" />
-                  Cart
-                </span>
-                {itemCount > 0 && (
-                  <span className="min-w-5 h-5 px-1 rounded-full bg-secondary text-white text-xs font-bold flex items-center justify-center">
-                    {itemCount}
-                  </span>
-                )}
-              </Link>
               <div className="px-4 py-2 space-y-2">
                 <a
                   href={SITE_CONFIG.whatsappLink}

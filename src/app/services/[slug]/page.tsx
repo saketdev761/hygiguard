@@ -4,7 +4,11 @@
 
 import React from 'react';
 import { Metadata } from 'next';
-import { FAQSection, CTASection } from '@/components/sections';
+import {
+  FAQSection,
+  CTASection,
+  HowItWorksSection,
+} from '@/components/sections';
 import { Heading, Text, Container, Section, Button } from '@/components/ui';
 import { SERVICES, SITE_CONFIG, FAQ } from '@/constants/site';
 import { AddToCartButton } from '@/components/cart/AddToCartButton';
@@ -84,7 +88,7 @@ export default async function ServiceDetailPage({
   return (
     <>
       {/* ─── Hero ─── */}
-      <section
+      <Section
         className="relative overflow-hidden"
         style={{
           background:
@@ -102,7 +106,7 @@ export default async function ServiceDetailPage({
           }}
         />
 
-        <Container className="relative py-16">
+        <Container className="relative">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 text-sm mb-8">
             <Link
@@ -208,37 +212,6 @@ export default async function ServiceDetailPage({
             </div>
           </div>
         </Container>
-      </section>
-
-      {/* ─── Benefits ─── */}
-      <Section className="bg-surface">
-        <Container>
-          <div className="text-center mb-10">
-            <p className="text-sm font-semibold tracking-widest uppercase text-secondary mb-2">
-              Why Choose Us
-            </p>
-            <Heading as="h2">Key Benefits</Heading>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {service.benefits.map((benefit, i) => (
-              <div
-                key={i}
-                className="flex items-start gap-3 bg-background border border-border rounded-xl p-5 hover:border-primary/40 hover:shadow-sm transition-all"
-              >
-                <div
-                  className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center mt-0.5"
-                  style={{ background: '#e8f5ee' }}
-                >
-                  <CheckCircle className="w-5 h-5 text-secondary" />
-                </div>
-                <span className="text-text-primary font-medium text-sm leading-relaxed">
-                  {benefit}
-                </span>
-              </div>
-            ))}
-          </div>
-        </Container>
       </Section>
 
       {/* ─── Pricing ─── */}
@@ -333,6 +306,7 @@ export default async function ServiceDetailPage({
                                 image: item.image,
                               }}
                             />
+
                             <a
                               href={`https://wa.me/${SITE_CONFIG.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(
                                 `Hello Hygiguard Solutions,\n\nI want to book:\n\nService: ${service.name}\nItem: ${item.name}\nVariant: ${variant.name}\nQuantity: 1\n\nPrice: ₹${variant.price}`
@@ -360,69 +334,45 @@ export default async function ServiceDetailPage({
           )}
         </Container>
       </Section>
-
-      {/* ─── Process ─── */}
-      <Section
-        style={{
-          background: 'linear-gradient(135deg, #f0f6fc 0%, #e8f5ee 100%)',
-        }}
-      >
+      {/* ─── Benefits ─── */}
+      <Section className="bg-surface">
         <Container>
-          <div className="text-center mb-12">
+          <div className="text-center mb-10">
             <p className="text-sm font-semibold tracking-widest uppercase text-secondary mb-2">
-              How It Works
+              Why Choose Us
             </p>
-            <Heading as="h2">Our Cleaning Process</Heading>
-            <Text className="text-text-secondary mt-2">
-              A proven {service.process.length}-step method for spotless
-              results.
-            </Text>
+            <Heading as="h2">Key Benefits</Heading>
           </div>
 
-          <div className="relative">
-            {/* connector line (hidden on mobile) */}
-            <div
-              className="hidden lg:block absolute top-10 left-0 right-0 h-0.5 z-0"
-              style={{
-                background: 'linear-gradient(90deg, #1677D2, #24C467)',
-                margin: '0 calc(100% / (2 * ' + service.process.length + '))',
-              }}
-            />
-
-            <div
-              className="grid gap-6 relative z-10"
-              style={{
-                gridTemplateColumns: `repeat(${Math.min(service.process.length, 5)}, minmax(0, 1fr))`,
-              }}
-            >
-              {service.process.map((step, index) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {service.benefits.map((benefit, i) => (
+              <div
+                key={i}
+                className="flex items-start gap-3 bg-background border border-border rounded-xl p-5 hover:border-primary/40 hover:shadow-sm transition-all"
+              >
                 <div
-                  key={index}
-                  className="flex flex-col items-center text-center"
+                  className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center mt-0.5"
+                  style={{ background: '#e8f5ee' }}
                 >
-                  {/* step circle */}
-                  <div
-                    className="w-20 h-20 rounded-full flex items-center justify-center font-bold text-xl text-white shadow-lg mb-4 border-4 border-white"
-                    style={{
-                      background:
-                        index === 0
-                          ? '#0B4F8A'
-                          : index === service.process.length - 1
-                            ? '#1F8B45'
-                            : '#1677D2',
-                    }}
-                  >
-                    {index + 1}
-                  </div>
-                  <p className="text-sm font-semibold text-text-primary leading-snug">
-                    {step}
-                  </p>
+                  <CheckCircle className="w-5 h-5 text-secondary" />
                 </div>
-              ))}
-            </div>
+                <span className="text-text-primary font-medium text-sm leading-relaxed">
+                  {benefit}
+                </span>
+              </div>
+            ))}
           </div>
         </Container>
       </Section>
+
+      {/* ─── Process ─── */}
+
+      <HowItWorksSection
+        title="Our Cleaning Process"
+        description={`A proven ${service.process.length}-step method for spotless
+              results.`}
+        steps={service.process}
+      />
 
       {/* ─── FAQ ─── */}
       <FAQSection

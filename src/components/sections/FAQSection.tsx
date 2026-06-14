@@ -50,7 +50,7 @@ export const FAQSection = ({ title, description, faqs }: FAQSectionProps) => {
   }));
 
   return (
-    <section ref={ref} className="py-16 md:py-24 lg:py-32 bg-background">
+    <section ref={ref} className="py-16 md:py-24 lg:py-32 bg-surface">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-12 md:mb-16"

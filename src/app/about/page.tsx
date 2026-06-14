@@ -7,11 +7,10 @@ import { Metadata } from 'next';
 import {
   HeroSection,
   FeaturesSection,
-  ReviewsSection,
   CTASection,
 } from '@/components/sections';
 import { Heading, Text, Container, Section } from '@/components/ui';
-import { WHY_CHOOSE_US, REVIEWS } from '@/constants/site';
+import { WHY_CHOOSE_US } from '@/constants/site';
 
 export const metadata: Metadata = {
   title: 'About Us',
@@ -155,6 +154,7 @@ export default function AboutPage() {
         description="The principles that guide everything we do"
         features={CORE_VALUES}
         columns={3}
+        background="bg-surface"
       />
 
       {/* Why Choose Us */}
@@ -163,14 +163,15 @@ export default function AboutPage() {
         description="What sets us apart from the competition"
         features={WHY_CHOOSE_US}
         columns={3}
+        background="bg-background"
       />
 
       {/* Customer Reviews */}
-      <ReviewsSection
+      {/* <ReviewsSection
         title="What Our Customers Say"
         description="Real testimonials from satisfied customers"
         reviews={REVIEWS}
-      />
+      /> */}
 
       {/* Team Section */}
       <Section className="bg-surface">
