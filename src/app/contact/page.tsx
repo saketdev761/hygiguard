@@ -122,24 +122,9 @@ export default function ContactPage() {
 
                 <div className="space-y-2 text-text-secondary">
                   <div className="flex justify-between">
-                    <span>Monday - Friday:</span>
                     <span className="font-semibold">9:00 AM - 8:00 PM</span>
+                    <span className="font-semibold">7 days a week</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span>Saturday:</span>
-                    <span className="font-semibold">9:00 AM - 6:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Sunday:</span>
-                    <span className="font-semibold">Closed</span>
-                  </div>
-                </div>
-
-                <div className="mt-4 p-3 bg-secondary bg-opacity-10 rounded-lg">
-                  <p className="text-sm text-text-secondary">
-                    <span className="font-semibold text-secondary">Note:</span>{' '}
-                    Same-day service available on request within business hours.
-                  </p>
                 </div>
               </Card>
 
@@ -166,7 +151,7 @@ export default function ContactPage() {
       </Section>
 
       {/* Map Placeholder */}
-      <Section className="bg-surface py-8">
+      {/* <Section className="bg-surface py-8">
         <Container>
           <div className="bg-gray-200 rounded-lg aspect-video flex items-center justify-center">
             <div className="text-center">
@@ -175,7 +160,7 @@ export default function ContactPage() {
             </div>
           </div>
         </Container>
-      </Section>
+      </Section> */}
 
       {/* CTA Section */}
       <CTASection

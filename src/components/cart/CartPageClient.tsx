@@ -119,10 +119,10 @@ export function CartPageClient() {
                             </p>
                             <div className="flex items-center gap-2">
                               <span className="font-bold text-primary text-xl">
-                                {formatPrice(item.price)}
+                                {formatPrice(item.price * item.quantity)}
                               </span>
                               <span className="text-sm line-through text-text-secondary">
-                                {formatPrice(item.originalPrice)}
+                                {formatPrice(item.originalPrice * item.quantity)}
                               </span>
                             </div>
                           </div>

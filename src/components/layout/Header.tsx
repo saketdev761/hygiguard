@@ -12,6 +12,8 @@ import { Button } from '@/components/ui';
 import { useCart } from '@/context/CartContext';
 import { useScrollPosition } from '@/hooks';
 import { cn } from '@/utils';
+import Image from 'next/image';
+
 
 const NAV_LINKS = [
   { label: 'Home', href: '/' },
@@ -63,8 +65,7 @@ export const Header = () => {
               href="/"
               className="flex items-center gap-2 font-bold text-xl text-primary hover:text-primary-light transition-colors"
             >
-              <span className="text-2xl">🧹</span>
-              <span className="hidden sm:inline">HygiGuard</span>
+              <Image src="/assets/images/hygiguard-logo.png" alt="Logo" width={40} height={40} />
             </Link>
 
             {/* Desktop Navigation */}

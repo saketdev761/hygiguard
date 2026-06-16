@@ -21,7 +21,7 @@ export interface CartItem {
   quantity: number;
 }
 
-type AddCartItem = Omit<CartItem, 'quantity'>;
+type AddCartItem = Omit<CartItem, 'quantity'> & { quantity?: number };
 
 interface CartContextValue {
   items: CartItem[];
@@ -94,7 +94,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       if (existingItem) {
         const nextItems = currentItems.map((cartItem) =>
           cartItem.id === item.id
-            ? { ...cartItem, quantity: cartItem.quantity + 1 }
+            ? { ...cartItem, quantity: cartItem.quantity + (item.quantity ?? 1) }
             : cartItem
         );
 
@@ -102,7 +102,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         return nextItems;
       }
 
-      const nextItems = [...currentItems, { ...item, quantity: 1 }];
+      const nextItems = [...currentItems, { ...item, quantity: item.quantity ?? 1 }];
       saveCart(nextItems);
       return nextItems;
     });
@@ -145,7 +145,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   const value = useMemo(
     () => ({
       items,
-      itemCount: items.reduce((total, item) => total + item.quantity, 0),
+      itemCount: items.length,
       subtotal: items.reduce(
         (total, item) => total + item.price * item.quantity,
         0

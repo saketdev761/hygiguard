@@ -11,7 +11,7 @@ import {
 } from '@/components/sections';
 import { Heading, Text, Container, Section, Button } from '@/components/ui';
 import { SERVICES, SITE_CONFIG, FAQ } from '@/constants/site';
-import { AddToCartButton } from '@/components/cart/AddToCartButton';
+import { ServiceVariantRow } from '@/components/services/ServiceVariantRow';
 import Link from 'next/link';
 import {
   ArrowLeft,
@@ -255,76 +255,19 @@ export default async function ServiceDetailPage({
                   {/* Variants */}
                   <div className="divide-y divide-border">
                     {item.variants.map((variant) => {
-                      const discount = Math.round(
-                        ((variant.originalPrice - variant.price) /
-                          variant.originalPrice) *
-                          100
-                      );
+                      // const discount = Math.round(
+                      //   ((variant.originalPrice - variant.price) /
+                      //     variant.originalPrice) *
+                      //     100
+                      // );
 
                       return (
-                        <div
+                        <ServiceVariantRow
                           key={variant.name}
-                          className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-5 hover:bg-background/60 transition-colors"
-                        >
-                          {/* Left: name + price */}
-                          <div className="flex items-center gap-4">
-                            <div>
-                              <p className="font-semibold text-text-primary">
-                                {variant.name}
-                              </p>
-                              <div className="flex items-center gap-2 mt-1">
-                                <span className="text-2xl font-bold text-primary">
-                                  ₹{variant.price}
-                                </span>
-                                <span className="text-text-secondary line-through text-sm">
-                                  ₹{variant.originalPrice}
-                                </span>
-                                <span
-                                  className="text-xs font-bold px-2 py-0.5 rounded-full"
-                                  style={{
-                                    background: '#e8f5ee',
-                                    color: '#1F8B45',
-                                  }}
-                                >
-                                  {discount}% OFF
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-
-                          {/* Right: Book CTA */}
-                          <div className="flex flex-col sm:flex-row gap-2 flex-shrink-0">
-                            <AddToCartButton
-                              item={{
-                                id: `${service.slug}:${item.name}:${variant.name}`,
-                                serviceSlug: service.slug,
-                                serviceName: service.name,
-                                itemName: item.name,
-                                variantName: variant.name,
-                                price: variant.price,
-                                originalPrice: variant.originalPrice,
-                                image: item.image,
-                              }}
-                            />
-
-                            <a
-                              href={`https://wa.me/${SITE_CONFIG.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(
-                                `Hello Hygiguard Solutions,\n\nI want to book:\n\nService: ${service.name}\nItem: ${item.name}\nVariant: ${variant.name}\nQuantity: 1\n\nPrice: ₹${variant.price}`
-                              )}`}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="flex-shrink-0"
-                            >
-                              <button
-                                className="w-full sm:w-auto flex items-center justify-center gap-2 text-sm font-semibold text-white px-5 py-2.5 rounded-lg transition-opacity hover:opacity-90"
-                                style={{ background: '#1F8B45' }}
-                              >
-                                <MessageCircle className="w-4 h-4" />
-                                Book ₹{variant.price}
-                              </button>
-                            </a>
-                          </div>
-                        </div>
+                          service={service}
+                          item={item}
+                          variant={variant}
+                        />
                       );
                     })}
                   </div>
