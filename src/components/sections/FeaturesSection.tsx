@@ -33,7 +33,7 @@ export const FeaturesSection = ({
   description,
   features,
   columns = 3,
-  background = 'bg-background',
+  background = 'bg-surface',
 }: FeaturesSectionProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);

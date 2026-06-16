@@ -5,7 +5,7 @@
 import React from 'react';
 import {
   HeroSection,
-  BeforeAfterSection,
+  // BeforeAfterSection,
   ServicesSection,
   HowItWorksSection,
   FeaturesSection,
@@ -20,7 +20,7 @@ import {
   HOW_IT_WORKS,
   FAQ,
 } from '@/constants/site';
-import { BEFORE_AFTER_IMAGES } from '@/data/images';
+// import { BEFORE_AFTER_IMAGES } from '@/data/images';
 
 export default function HomePage() {
   return (
@@ -32,11 +32,11 @@ export default function HomePage() {
       />
 
       {/* Before After Section */}
-      <BeforeAfterSection
+      {/* <BeforeAfterSection
         title="See Our Transformation Results"
         description="Witness the dramatic difference our professional cleaning service makes to your furniture and home."
         images={BEFORE_AFTER_IMAGES}
-      />
+      /> */}
 
       {/* Services Section */}
       <ServicesSection

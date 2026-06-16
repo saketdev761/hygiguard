@@ -25,7 +25,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.baseUrl),
   title: {
-    default: `${SITE_CONFIG.name} | ${SITE_CONFIG.tagline}`,
+    default: `${SITE_CONFIG.tagline} | ${SITE_CONFIG.name}`,
     template: `%s | ${SITE_CONFIG.name}`,
   },
   description: SITE_CONFIG.description,
@@ -81,6 +81,12 @@ export default function RootLayout({
         <meta name="theme-color" content="#0F4C81" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(SITE_CONFIG.schema.localBusiness),
+          }}
+        />
       </head>
       <body className={`${inter.variable} ${poppins.variable} antialiased`}>
         <CartProvider>
