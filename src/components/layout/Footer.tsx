@@ -10,9 +10,9 @@ import {
   MapPin,
   Facebook,
   Instagram,
-  Twitter,
-  Linkedin,
-  Youtube,
+  // Twitter,
+  // Linkedin,
+  // Youtube,
   MessageCircle,
 } from 'lucide-react';
 import { SITE_CONFIG, SERVICES } from '@/constants/site';

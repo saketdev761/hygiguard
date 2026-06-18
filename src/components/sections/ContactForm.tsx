@@ -6,6 +6,7 @@
 
 import React, { useState } from 'react';
 import { Button, Text } from '@/components/ui';
+import { SITE_CONFIG, SERVICES } from '@/constants/site';
 
 interface ContactFormProps {
   onSubmit?: (data: FormData) => void;
@@ -138,7 +139,7 @@ export const ContactForm = ({ onSubmit }: ContactFormProps) => {
       </div>
 
       {/* Location Field */}
-      {/* <div>
+      <div>
         <label
           htmlFor="location"
           className="block text-sm font-semibold text-primary mb-2"
@@ -160,10 +161,10 @@ export const ContactForm = ({ onSubmit }: ContactFormProps) => {
             </option>
           ))}
         </select>
-      </div> */}
+      </div>
 
       {/* Service Field */}
-      {/* <div>
+      <div>
         <label
           htmlFor="service"
           className="block text-sm font-semibold text-primary mb-2"
@@ -185,7 +186,7 @@ export const ContactForm = ({ onSubmit }: ContactFormProps) => {
             </option>
           ))}
         </select>
-      </div> */}
+      </div>
 
       {/* Message Field */}
       <div>
