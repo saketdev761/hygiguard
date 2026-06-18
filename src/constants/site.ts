@@ -56,8 +56,8 @@ export const SITE_CONFIG = {
 
   // Social Links
   social: {
-    facebook: 'https://facebook.com/hygiguardsolutions',
-    instagram: 'https://instagram.com/hygiguardsolutions',
+    facebook: 'https://www.facebook.com/Hygiguards',
+    instagram: 'https://www.instagram.com/hygiguards',
     twitter: 'https://twitter.com/hygiguard',
     youtube: 'https://youtube.com/@hygiguardsolutions',
     linkedin: 'https://linkedin.com/company/hygiguardsolutions',
@@ -183,13 +183,13 @@ export const SERVICES = [
       'Deep clean and refresh your sofas with our professional cleaning process.',
     // GEO: Written as a direct-answer paragraph so AI can cite it
     description:
-      'HygiGuard Solutions provides professional sofa cleaning in Lucknow starting at ₹699. We use eco-friendly chemicals and advanced hot water extraction equipment to remove dirt, stains, and allergens from all sofa types. Same-day doorstep service is available across Gomti Nagar, Indira Nagar, Aliganj, and Hazratganj, 7 days a week from 9 AM to 8 PM.',
+      'HygiGuard Solutions provides professional sofa cleaning in Lucknow starting at 170. We use eco-friendly chemicals and advanced hot water extraction equipment to remove dirt, stains, and allergens from all sofa types. Same-day doorstep service is available across Gomti Nagar, Indira Nagar, Aliganj, and Hazratganj, 7 days a week from 9 AM to 8 PM.',
     pricing: {
       startingFrom: 170,
       items: [
         {
           name: 'Cotton Sofa Cleaning',
-          image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc',
+          image: '/assets/images/services/lucknow/fabric-sofa-cleaning.png',
           imageAlt: 'Cotton sofa deep cleaning in Lucknow',
           variants: [
             { name: 'Per Seat', price: 170, originalPrice: 200, unit: 'Seat' },
@@ -197,7 +197,7 @@ export const SERVICES = [
         },
         {
           name: 'Velvet Sofa Cleaning',
-          image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc',
+          image: '/assets/images/services/lucknow/velvet-sofa-cleaning.jpeg',
           imageAlt: 'Velvet sofa deep cleaning in Lucknow',
           variants: [
             { name: 'Per Seat', price: 213, originalPrice: 250, unit: 'Seat' },
@@ -205,7 +205,7 @@ export const SERVICES = [
         },
         {
           name: 'Leather Sofa Cleaning',
-          image: 'https://images.unsplash.com/photo-1618220179428-22790b461013',
+          image: '/assets/images/services/lucknow/leather-sofa-cleaning.png',
           imageAlt: 'Leather sofa cleaning service in Lucknow',
           variants: [
             { name: 'Per Seat', price: 298, originalPrice: 350, unit: 'Seat' },
@@ -295,6 +295,85 @@ export const SERVICES = [
   },
 
   {
+    id: 'carpet-cleaning',
+    name: 'Carpet Cleaning',
+    title: 'Professional Carpet Cleaning in Lucknow',
+    icon: 'Waves',
+    slug: 'carpet-cleaning',
+    image: '/assets/images/services/lucknow/carpet-cleaning.png',
+    imageAlt:
+      'Professional carpet cleaning service in Lucknow by HygiGuard Solutions',
+    shortDescription:
+      'Restore the beauty of your carpets with professional deep cleaning.',
+    description:
+      'HygiGuard Solutions provides professional carpet cleaning in Lucknow starting at ₹12.75/Sq. Ft.. Our service removes embedded dirt, odors, and allergens from all carpet types using professional-grade equipment. Doorstep service available across Lucknow.',
+    pricing: {
+      startingFrom: 12.75,
+      items: [
+        {
+          name: 'Carpet Cleaning',
+          image: '/assets/images/services/lucknow/floor-carpet-cleaning.png',
+          imageAlt: 'Carpet deep cleaning in Lucknow',
+          variants: [
+            { name: 'Per Sq. Ft.', price: 12.75, originalPrice: 15, unit: 'Sq. Ft.', minQty: 50 },
+          ],
+        },
+      ],
+    },
+    benefits: ['Removes embedded dirt', 'Removes odor', 'Restores carpet look'],
+    process: [
+      {
+        step: '1',
+        title: 'Book Your Service',
+        description:
+          'Call us, WhatsApp us, or submit a request online to schedule your carpet cleaning service.',
+      },
+      {
+        step: '2',
+        title: 'Carpet Inspection',
+        description:
+          'We assess the carpet type, fiber material, and identify heavily soiled or stained areas.',
+      },
+      {
+        step: '3',
+        title: 'Dry Vacuuming',
+        description:
+          'Loose dirt, dust, and debris are vacuumed out from the carpet surface and fibers.',
+      },
+      {
+        step: '4',
+        title: 'Deep Cleaning',
+        description:
+          'Using professional-grade equipment, we deep clean the carpet to remove embedded dirt, odors, and allergens.',
+      },
+      {
+        step: '5',
+        title: 'Drying & Final Inspection',
+        description:
+          'The carpet is dried thoroughly and inspected to ensure it looks refreshed and restored before we finish.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'How much does carpet cleaning cost in Lucknow?',
+        answer:
+          'Carpet cleaning in Lucknow starts from ₹399 for a small carpet at HygiGuard Solutions. Large carpet cleaning starts from ₹1299.',
+      },
+      {
+        question: 'Can carpet cleaning remove old stains?',
+        answer:
+          'Yes, HygiGuard Solutions uses professional-grade deep cleaning equipment that can remove most embedded stains, dirt, and odors from carpets.',
+      },
+      {
+        question: 'How long does carpet cleaning take?',
+        answer:
+          'Carpet cleaning typically takes 1–3 hours depending on carpet size and level of soiling. Drying takes an additional 3–6 hours.',
+      },
+    ],
+    price: 'Starting from ₹12.75 / Sq. Ft.',
+  },
+
+  {
     id: 'mattress-cleaning',
     name: 'Mattress Cleaning',
     title: 'Professional Mattress Cleaning in Lucknow',
@@ -312,7 +391,7 @@ export const SERVICES = [
       items: [
         {
           name: 'Mattress Cleaning',
-          image: '/assets/images/services/lucknow/mattress-cleaning.png',
+          image: '/assets/images/services/lucknow/bed-cleaning.png',
           imageAlt: 'Mattress cleaning in Lucknow',
           variants: [
             { name: 'Single Side', price: 255, originalPrice: 300 },
@@ -390,84 +469,7 @@ export const SERVICES = [
     price: 'Starting from ₹255',
   },
 
-  {
-    id: 'carpet-cleaning',
-    name: 'Carpet Cleaning',
-    title: 'Professional Carpet Cleaning in Lucknow',
-    icon: 'Waves',
-    slug: 'carpet-cleaning',
-    image: '/assets/images/services/lucknow/carpet-cleaning.png',
-    imageAlt:
-      'Professional carpet cleaning service in Lucknow by HygiGuard Solutions',
-    shortDescription:
-      'Restore the beauty of your carpets with professional deep cleaning.',
-    description:
-      'HygiGuard Solutions provides professional carpet cleaning in Lucknow starting at ₹12.75/Sq. Ft.. Our service removes embedded dirt, odors, and allergens from all carpet types using professional-grade equipment. Doorstep service available across Lucknow.',
-    pricing: {
-      startingFrom: 12.75,
-      items: [
-        {
-          name: 'Carpet Cleaning',
-          image: 'https://images.unsplash.com/photo-1600166898405-da9535204843',
-          imageAlt: 'Carpet deep cleaning in Lucknow',
-          variants: [
-            { name: 'Per Sq. Ft.', price: 12.75, originalPrice: 15, unit: 'Sq. Ft.', minQty: 50 },
-          ],
-        },
-      ],
-    },
-    benefits: ['Removes embedded dirt', 'Removes odor', 'Restores carpet look'],
-    process: [
-      {
-        step: '1',
-        title: 'Book Your Service',
-        description:
-          'Call us, WhatsApp us, or submit a request online to schedule your carpet cleaning service.',
-      },
-      {
-        step: '2',
-        title: 'Carpet Inspection',
-        description:
-          'We assess the carpet type, fiber material, and identify heavily soiled or stained areas.',
-      },
-      {
-        step: '3',
-        title: 'Dry Vacuuming',
-        description:
-          'Loose dirt, dust, and debris are vacuumed out from the carpet surface and fibers.',
-      },
-      {
-        step: '4',
-        title: 'Deep Cleaning',
-        description:
-          'Using professional-grade equipment, we deep clean the carpet to remove embedded dirt, odors, and allergens.',
-      },
-      {
-        step: '5',
-        title: 'Drying & Final Inspection',
-        description:
-          'The carpet is dried thoroughly and inspected to ensure it looks refreshed and restored before we finish.',
-      },
-    ],
-    faqs: [
-      {
-        question: 'How much does carpet cleaning cost in Lucknow?',
-        answer:
-          'Carpet cleaning in Lucknow starts from ₹399 for a small carpet at HygiGuard Solutions. Large carpet cleaning starts from ₹1299.',
-      },
-      {
-        question: 'Can carpet cleaning remove old stains?',
-        answer:
-          'Yes, HygiGuard Solutions uses professional-grade deep cleaning equipment that can remove most embedded stains, dirt, and odors from carpets.',
-      },
-      {
-        question: 'How long does carpet cleaning take?',
-        answer:
-          'Carpet cleaning typically takes 1–3 hours depending on carpet size and level of soiling. Drying takes an additional 3–6 hours.',
-      },
-    ],
-    price: 'Starting from ₹12.75 / Sq. Ft.',
-  },
+  
 
   {
     id: 'chair-cleaning',
@@ -480,25 +482,25 @@ export const SERVICES = [
       'Professional chair cleaning service in Lucknow by HygiGuard Solutions',
     shortDescription: 'Specialized cleaning for office and dining chairs.',
     description:
-      'HygiGuard Solutions provides professional chair cleaning in Lucknow starting at ₹99 per chair. We clean dining chairs, office chairs, and all upholstered seating with eco-friendly solutions. Doorstep service available across Lucknow.',
+      'HygiGuard Solutions provides professional chair cleaning in Lucknow starting at ₹85 per chair. We clean dining chairs, office chairs, and all upholstered seating with eco-friendly solutions. Doorstep service available across Lucknow.',
     pricing: {
       startingFrom: 85,
       items: [
         {
           name: 'Cotton Chair Cleaning',
-          image: 'https://images.unsplash.com/photo-1503602642458-232111445657',
+          image: '/assets/images/services/lucknow/office-chair-cleaning.png',
           imageAlt: 'Cotton chair cleaning in Lucknow',
           variants: [{ name: 'Per Seat', price: 85, originalPrice: 100, unit: 'Seat' }],
         },
         {
           name: 'Velvet Chair Cleaning',
-          image: 'https://images.unsplash.com/photo-1503602642458-232111445657',
+          image: '/assets/images/services/lucknow/velvet-chair-cleaning.png',
           imageAlt: 'Velvet chair cleaning in Lucknow',
           variants: [{ name: 'Per Seat', price: 128, originalPrice: 150, unit: 'Seat' }],
         },
         {
           name: 'Leather Chair Cleaning',
-          image: 'https://images.unsplash.com/photo-1505797149-43b0069ec26b',
+          image: '/assets/images/services/lucknow/leather-chair-cleaning.png',
           imageAlt: 'Leather chair cleaning in Lucknow',
           variants: [{ name: 'Per Seat', price: 170, originalPrice: 200, unit: 'Seat' }],
         },
@@ -541,7 +543,7 @@ export const SERVICES = [
       {
         question: 'How much does chair cleaning cost in Lucknow?',
         answer:
-          'Chair cleaning in Lucknow starts from ₹99 per dining chair and ₹199 per office chair at HygiGuard Solutions.',
+          'Chair cleaning in Lucknow starts from ₹85 per dining chair at HygiGuard Solutions.',
       },
       {
         question: 'Do you clean office chairs in Lucknow?',
@@ -564,7 +566,7 @@ export const SERVICES = [
     shortDescription:
       'Refresh and deep clean your cushions for a hygienic living space.',
     description:
-      'HygiGuard Solutions provides professional cushion cleaning in Lucknow starting at ₹49 per cushion. We remove dust, stains, and allergens from sofa cushions, floor cushions, and decorative cushions, restoring their freshness and comfort.',
+      'HygiGuard Solutions provides professional cushion cleaning in Lucknow starting at ₹68 per cushion. We remove dust, stains, and allergens from sofa cushions, floor cushions, and decorative cushions, restoring their freshness and comfort.',
     pricing: {
       startingFrom: 68,
       items: [
@@ -649,13 +651,13 @@ export const SERVICES = [
     shortDescription:
       'Professional curtain cleaning to remove dust, stains, and allergens.',
     description:
-      'HygiGuard Solutions provides professional curtain cleaning in Lucknow starting at ₹49 per panel. We handle all fabric types — sheer, blackout, velvet, and designer curtains — with on-site cleaning or pick-up and drop service available across Lucknow.',
+      'HygiGuard Solutions provides professional curtain cleaning in Lucknow starting at ₹12.75 per Sq.Ft. We handle all fabric types — sheer, blackout, velvet, and designer curtains — with on-site cleaning or pick-up and drop service available across Lucknow.',
     pricing: {
       startingFrom: 12.75,
       items: [
         {
           name: 'Roman Curtain Cleaning',
-          image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64',
+          image: '/assets/images/services/lucknow/curtain-cleaning.png',
           imageAlt: 'Roman curtain cleaning in Lucknow',
           variants: [
             { name: 'Per Sq. Ft.', price: 12.75, originalPrice: 15, unit: 'Sq. Ft.', minQty: 20 },
@@ -663,7 +665,7 @@ export const SERVICES = [
         },
         {
           name: 'Roller Blind Cleaning',
-          image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
+          image: '/assets/images/services/lucknow/curtain-cleaning.png',
           imageAlt: 'Roller blind cleaning in Lucknow',
           variants: [
             { name: 'Per Sq. Ft.', price: 12.75, originalPrice: 15, unit: 'Sq. Ft.', minQty: 20 },
@@ -671,7 +673,7 @@ export const SERVICES = [
         },
         {
           name: 'Bamboo Blind Cleaning',
-          image: 'https://images.unsplash.com/photo-1600166898405-da9535204843',
+          image: '/assets/images/services/lucknow/bamboo-blind-cleaning.png',
           imageAlt: 'Bamboo blind cleaning in Lucknow',
           variants: [{ name: 'Per Sq. Ft.', price: 12.75, originalPrice: 15, unit: 'Sq. Ft.', minQty: 20 }],
         },
@@ -726,7 +728,7 @@ export const SERVICES = [
       {
         question: 'How much does curtain cleaning cost in Lucknow?',
         answer:
-          'Curtain cleaning in Lucknow starts from ₹49 per panel for sheer curtains at HygiGuard Solutions. Velvet and designer curtains start from ₹349 per panel.',
+          'Curtain cleaning in Lucknow starts from ₹12.75 / Sq. Ft. at HygiGuard Solutions.',
       },
       {
         question: 'Do you clean blackout curtains in Lucknow?',

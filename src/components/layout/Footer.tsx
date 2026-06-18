@@ -56,14 +56,14 @@ export const Footer = () => {
                   Services
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/gallery"
                   className="hover:text-secondary transition-colors text-white"
                 >
                   Gallery
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   href="/about"
@@ -162,7 +162,7 @@ export const Footer = () => {
             >
               <Instagram className="w-5 h-5" />
             </a>
-            <a
+            {/* <a
               href={SITE_CONFIG.social.twitter}
               target="_blank"
               rel="noopener noreferrer"
@@ -188,7 +188,7 @@ export const Footer = () => {
               aria-label="LinkedIn"
             >
               <Linkedin className="w-5 h-5" />
-            </a>
+            </a> */}
           </div>
         </div>
 
