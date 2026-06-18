@@ -30,7 +30,7 @@ export default function ContactPage() {
                 <div className="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-bold text-text-primary mb-2">Phone</h3>
+                <h3 className="font-bold text-primary mb-2">Phone</h3>
                 <a
                   href={SITE_CONFIG.phoneLink}
                   className="text-primary hover:text-primary-light font-semibold"
@@ -46,7 +46,7 @@ export default function ContactPage() {
                 <div className="w-12 h-12 bg-green-500 bg-opacity-10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <MessageCircle className="w-6 h-6 text-green-500" />
                 </div>
-                <h3 className="font-bold text-text-primary mb-2">WhatsApp</h3>
+                <h3 className="font-bold text-primary mb-2">WhatsApp</h3>
                 <a
                   href={SITE_CONFIG.whatsappLink}
                   target="_blank"
@@ -64,7 +64,7 @@ export default function ContactPage() {
                 <div className="w-12 h-12 bg-secondary bg-opacity-10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Mail className="w-6 h-6 text-secondary" />
                 </div>
-                <h3 className="font-bold text-text-primary mb-2">Email</h3>
+                <h3 className="font-bold text-primary mb-2">Email</h3>
                 <a
                   href={SITE_CONFIG.emailLink}
                   className="text-secondary hover:text-secondary-light font-semibold break-all"
@@ -80,8 +80,8 @@ export default function ContactPage() {
                 <div className="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-bold text-text-primary mb-2">Location</h3>
-                <p className="text-text-secondary">{SITE_CONFIG.address}</p>
+                <h3 className="font-bold text-primary mb-2">Location</h3>
+                <p className="text-secondary">{SITE_CONFIG.address}</p>
               </div>
             </Card>
           </div>
@@ -114,13 +114,13 @@ export default function ContactPage() {
                     <Clock className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-text-primary text-lg">
+                    <h3 className="font-bold text-primary text-lg">
                       Business Hours
                     </h3>
                   </div>
                 </div>
 
-                <div className="space-y-2 text-text-secondary">
+                <div className="space-y-2 text-secondary">
                   <div className="flex justify-between">
                     <span className="font-semibold">9:00 AM - 8:00 PM</span>
                     <span className="font-semibold">7 days a week</span>
@@ -130,14 +130,14 @@ export default function ContactPage() {
 
               {/* Service Areas */}
               <Card>
-                <h3 className="font-bold text-text-primary text-lg mb-4">
+                <h3 className="font-bold text-primary text-lg mb-4">
                   Service Areas
                 </h3>
                 <div className="grid grid-cols-2 gap-3">
                   {SITE_CONFIG.serviceAreas.map((area) => (
                     <div
                       key={area}
-                      className="flex items-center gap-2 text-text-secondary"
+                      className="flex items-center gap-2 text-secondary"
                     >
                       <div className="w-2 h-2 bg-primary rounded-full" />
                       {area}
@@ -155,8 +155,8 @@ export default function ContactPage() {
         <Container>
           <div className="bg-gray-200 rounded-lg aspect-video flex items-center justify-center">
             <div className="text-center">
-              <MapPin className="w-12 h-12 text-text-secondary mx-auto mb-4" />
-              <p className="text-text-secondary">Map Location Coming Soon</p>
+              <MapPin className="w-12 h-12 text-secondary mx-auto mb-4" />
+              <p className="text-secondary">Map Location Coming Soon</p>
             </div>
           </div>
         </Container>

@@ -30,7 +30,7 @@ export default function Error({ error, reset }: ErrorProps) {
           </Text>
 
           {error.digest && (
-            <Text variant="caption" className="text-text-secondary">
+            <Text variant="caption" className="text-secondary">
               Error ID: {error.digest}
             </Text>
           )}

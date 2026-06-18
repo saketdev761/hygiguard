@@ -111,17 +111,17 @@ export function CartPageClient() {
                             <p className="text-sm font-semibold text-secondary mb-1">
                               {item.serviceName}
                             </p>
-                            <h2 className="text-lg font-bold text-text-primary mb-1">
+                            <h2 className="text-lg font-bold text-primary mb-1">
                               {item.itemName}
                             </h2>
-                            <p className="text-sm text-text-secondary mb-3">
+                            <p className="text-sm text-secondary mb-3">
                               {item.variantName}
                             </p>
                             <div className="flex items-center gap-2">
                               <span className="font-bold text-primary text-xl">
                                 {formatPrice(item.price * item.quantity)}
                               </span>
-                              <span className="text-sm line-through text-text-secondary">
+                              <span className="text-sm line-through text-secondary">
                                 {formatPrice(item.originalPrice * item.quantity)}
                               </span>
                             </div>
@@ -131,7 +131,7 @@ export function CartPageClient() {
                             <div className="flex items-center border border-border rounded-lg overflow-hidden bg-background">
                               <button
                                 type="button"
-                                className="w-9 h-9 flex items-center justify-center text-text-primary hover:bg-surface"
+                                className="w-9 h-9 flex items-center justify-center text-primary hover:bg-surface"
                                 aria-label={`Decrease ${item.itemName}`}
                                 onClick={() =>
                                   updateQuantity(item.id, item.quantity - 1)
@@ -144,7 +144,7 @@ export function CartPageClient() {
                               </span>
                               <button
                                 type="button"
-                                className="w-9 h-9 flex items-center justify-center text-text-primary hover:bg-surface"
+                                className="w-9 h-9 flex items-center justify-center text-primary hover:bg-surface"
                                 aria-label={`Increase ${item.itemName}`}
                                 onClick={() =>
                                   updateQuantity(item.id, item.quantity + 1)
@@ -177,16 +177,16 @@ export function CartPageClient() {
             </Heading>
             <div className="space-y-3 border-b border-border pb-5 mb-5">
               <div className="flex items-center justify-between text-sm">
-                <span className="text-text-secondary">Selected services</span>
+                <span className="text-secondary">Selected services</span>
                 <span className="font-semibold">{itemCount}</span>
               </div>
               <div className="flex items-center justify-between text-sm">
-                <span className="text-text-secondary">Subtotal</span>
+                <span className="text-secondary">Subtotal</span>
                 <span className="font-semibold">{formatPrice(subtotal)}</span>
               </div>
             </div>
             <div className="flex items-center justify-between mb-5">
-              <span className="font-bold text-text-primary">Estimated total</span>
+              <span className="font-bold text-primary">Estimated total</span>
               <span className="text-2xl font-bold text-primary">
                 {formatPrice(subtotal)}
               </span>

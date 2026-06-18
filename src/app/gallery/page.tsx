@@ -44,7 +44,7 @@ export default function GalleryPage() {
                 className={`px-6 py-2 rounded-full font-semibold transition-all ${
                   selectedCategory === category
                     ? 'bg-primary text-white shadow-lg'
-                    : 'bg-surface border-2 border-border hover:border-primary text-text-primary'
+                    : 'bg-surface border-2 border-border hover:border-primary text-primary'
                 }`}
               >
                 {category}

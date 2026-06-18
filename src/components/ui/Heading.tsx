@@ -32,7 +32,7 @@ export const Heading = React.forwardRef<HTMLHeadingElement, HeadingProps>(
     return (
       <Component
         ref={ref}
-        className={cn("text-text-primary", variants[variant], className)}
+        className={cn("text-primary", variants[variant], className)}
         {...props}
       >
         {children}

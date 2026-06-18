@@ -58,7 +58,7 @@ export const Modal = ({ isOpen, onClose, children, className }: ModalProps) => {
           className="absolute top-4 right-4 z-10 p-2 hover:bg-background rounded-lg transition-colors"
           aria-label="Close modal"
         >
-          <X className="w-6 h-6 text-text-secondary" />
+          <X className="w-6 h-6 text-secondary" />
         </button>
         {children}
       </div>

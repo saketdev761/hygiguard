@@ -75,7 +75,7 @@ export const ServiceAreasSection = ({
               className="bg-background border-2 border-primary rounded-lg p-4 text-center hover:shadow-lg hover:border-primary-light transition-all"
             >
               <MapPin className="w-6 h-6 text-primary mx-auto mb-2" />
-              <p className="font-semibold text-text-primary text-sm">{area}</p>
+              <p className="font-semibold text-primary text-sm">{area}</p>
             </motion.div>
           ))}
         </motion.div>

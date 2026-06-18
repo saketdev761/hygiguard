@@ -89,7 +89,7 @@ export const HowItWorksSection = ({
                 </div>
 
                 <div className="pt-4 space-y-3">
-                  <h3 className="font-bold text-lg text-text-primary">
+                  <h3 className="font-bold text-lg text-primary">
                     {step.title}
                   </h3>
                   <Text variant="body" className="text-center">

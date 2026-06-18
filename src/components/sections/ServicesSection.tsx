@@ -98,7 +98,7 @@ export const ServicesSection = ({
                     <div className="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
                       <IconComponent className="w-6 h-6 text-secondary" />
                     </div>
-                    <h3 className="font-bold text-text-primary mb-2">
+                    <h3 className="font-bold text-primary mb-2">
                       {service.name}
                     </h3>
                     <Text variant="caption">{service.shortDescription}</Text>

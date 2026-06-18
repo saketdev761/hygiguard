@@ -10,7 +10,7 @@ import {
   HowItWorksSection,
 } from '@/components/sections';
 import { Heading, Text, Container, Section, Button } from '@/components/ui';
-import { SERVICES, SITE_CONFIG, FAQ } from '@/constants/site';
+import { SERVICES, SITE_CONFIG } from '@/constants/site';
 import { ServiceVariantRow } from '@/components/services/ServiceVariantRow';
 import Link from 'next/link';
 import {
@@ -222,7 +222,7 @@ export default async function ServiceDetailPage({
               Transparent Pricing
             </p>
             <Heading as="h2">Choose Your Plan</Heading>
-            <Text className="text-text-secondary mt-2">
+            <Text className="text-secondary mt-2">
               No hidden charges. What you see is what you pay.
             </Text>
           </div>
@@ -242,10 +242,10 @@ export default async function ServiceDetailPage({
                       className="w-16 h-16 object-cover rounded-xl flex-shrink-0"
                     />
                     <div>
-                      <h3 className="text-text-primary font-bold text-lg">
+                      <h3 className="text-primary font-bold text-lg">
                         {item.name}
                       </h3>
-                      <p className="text-text-secondary text-sm">
+                      <p className="text-secondary text-sm">
                         {item.variants.length} variant
                         {item.variants.length > 1 ? 's' : ''} available
                       </p>
@@ -299,7 +299,7 @@ export default async function ServiceDetailPage({
                 >
                   <CheckCircle className="w-5 h-5 text-secondary" />
                 </div>
-                <span className="text-text-primary font-medium text-sm leading-relaxed">
+                <span className="text-primary font-medium text-sm leading-relaxed">
                   {benefit}
                 </span>
               </div>
@@ -321,7 +321,7 @@ export default async function ServiceDetailPage({
       <FAQSection
         title="Frequently Asked Questions"
         description="Everything you need to know about this service"
-        faqs={FAQ.slice(0, 6)}
+        faqs={service.faqs}
       />
 
       {/* ─── Related Services ─── */}
@@ -351,10 +351,10 @@ export default async function ServiceDetailPage({
                     className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="p-5">
-                    <h3 className="font-bold text-text-primary mb-1">
+                    <h3 className="font-bold text-primary mb-1">
                       {rel.name}
                     </h3>
-                    <p className="text-text-secondary text-sm mb-3 line-clamp-2">
+                    <p className="text-secondary text-sm mb-3 line-clamp-2">
                       {rel.shortDescription}
                     </p>
                     <span className="text-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">

@@ -74,7 +74,7 @@ export const Header = () => {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-text-primary hover:text-primary font-medium transition-colors"
+                  className="text-primary hover:text-primary font-medium transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -120,9 +120,9 @@ export const Header = () => {
                 aria-expanded={isMobileMenuOpen}
               >
                 {isMobileMenuOpen ? (
-                  <X className="w-6 h-6 text-text-primary" />
+                  <X className="w-6 h-6 text-primary" />
                 ) : (
-                  <Menu className="w-6 h-6 text-text-primary" />
+                  <Menu className="w-6 h-6 text-primary" />
                 )}
               </button>
             </div>
@@ -135,7 +135,7 @@ export const Header = () => {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="block px-4 py-2 text-text-primary hover:bg-background rounded-lg transition-colors"
+                  className="block px-4 py-2 text-primary hover:bg-background rounded-lg transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.label}

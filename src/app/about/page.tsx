@@ -91,8 +91,8 @@ export default function AboutPage() {
                 </Text>
               </div>
             </div>
-
-            <div className="bg-gradient-to-br from-primary to-primary-light rounded-lg p-8 text-white">
+           {/* TODO: Add image */}
+            {/* <div className="bg-gradient-to-br from-primary to-primary-light rounded-lg p-8 text-white">
               <h3 className="text-2xl font-bold mb-6">Quick Stats</h3>
               <div className="space-y-4">
                 <div>
@@ -112,7 +112,7 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </Container>
       </Section>
@@ -179,13 +179,13 @@ export default function AboutPage() {
           <Heading as="h2" className="text-center mb-12">
             Our Professional Team
           </Heading>
-          <div className="bg-gradient-to-r from-primary to-primary-light rounded-lg p-8 md:p-12 text-white text-center">
-            <p className="text-lg mb-4">
+          <div className="bg-gradient-to-r from-primary to-primary-light rounded-lg p-8 md:p-12 text-center">
+            <p className="text-lg mb-4 text-white">
               Our team consists of certified professionals with years of
               experience in professional cleaning. Each member is trained,
               background-checked, and committed to delivering excellence.
             </p>
-            <p className="text-xl font-semibold">
+            <p className="text-xl font-semibold text-white">
               Trained • Certified • Reliable • Professional
             </p>
           </div>

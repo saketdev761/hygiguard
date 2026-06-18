@@ -25,7 +25,7 @@ export const AccordionItem = ({
     <div className="border border-border rounded-lg overflow-hidden">
       <button
         onClick={onToggle}
-        className="w-full px-6 py-4 flex items-center justify-between bg-surface hover:bg-background transition-colors text-left font-semibold text-text-primary"
+        className="w-full px-6 py-4 flex items-center justify-between bg-surface hover:bg-background transition-colors text-left font-semibold text-primary"
         aria-expanded={isOpen}
       >
         {title}
@@ -37,7 +37,7 @@ export const AccordionItem = ({
         />
       </button>
       {isOpen && (
-        <div className="px-6 py-4 bg-background text-text-secondary border-t border-border">
+        <div className="px-6 py-4 bg-background text-secondary border-t border-border">
           {content}
         </div>
       )}

@@ -108,20 +108,20 @@ export default function ServicesPage() {
                 <div className="aspect-[4/3] overflow-hidden bg-background">
                   <img
                     src={service.image}
-                    alt={service.name}
+                    alt={service.imageAlt}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="p-5">
                   <div className="flex items-start justify-between gap-3 mb-3">
-                    <h3 className="text-xl font-bold text-text-primary mb-0">
+                    <h3 className="text-xl font-bold text-primary mb-0">
                       {service.name}
                     </h3>
                     <span className="text-sm font-bold text-secondary whitespace-nowrap">
                       ₹{service.pricing.startingFrom}+
                     </span>
                   </div>
-                  <p className="text-text-secondary text-sm mb-4">
+                  <p className="text-secondary text-sm mb-4">
                     {service.shortDescription}
                   </p>
                   <span className="inline-flex items-center gap-1 text-primary text-sm font-semibold group-hover:gap-2 transition-all">

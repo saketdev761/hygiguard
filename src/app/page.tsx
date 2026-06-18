@@ -78,7 +78,7 @@ export default function HomePage() {
       {/* Service Areas Section */}
       <ServiceAreasSection
         title="Service Areas"
-        description="We serve all major areas in and around Lucknow"
+        description="We proudly provide professional sofa, mattress, chair, cushion, and carpet cleaning services across all major areas of Lucknow and nearby localities. Our trained cleaning experts ensure convenient doorstep service, delivering a cleaner, fresher, and healthier environment for your home and office."
         areas={SITE_CONFIG.serviceAreas}
       />
 

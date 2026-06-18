@@ -102,7 +102,7 @@ export const ContactForm = ({ onSubmit }: ContactFormProps) => {
       <div>
         <label
           htmlFor="name"
-          className="block text-sm font-semibold text-text-primary mb-2"
+          className="block text-sm font-semibold text-primary mb-2"
         >
           Full Name *
         </label>
@@ -122,7 +122,7 @@ export const ContactForm = ({ onSubmit }: ContactFormProps) => {
       <div>
         <label
           htmlFor="phone"
-          className="block text-sm font-semibold text-text-primary mb-2"
+          className="block text-sm font-semibold text-primary mb-2"
         >
           Phone Number *
         </label>
@@ -142,7 +142,7 @@ export const ContactForm = ({ onSubmit }: ContactFormProps) => {
       <div>
         <label
           htmlFor="location"
-          className="block text-sm font-semibold text-text-primary mb-2"
+          className="block text-sm font-semibold text-primary mb-2"
         >
           Location *
         </label>
@@ -167,7 +167,7 @@ export const ContactForm = ({ onSubmit }: ContactFormProps) => {
       <div>
         <label
           htmlFor="service"
-          className="block text-sm font-semibold text-text-primary mb-2"
+          className="block text-sm font-semibold text-primary mb-2"
         >
           Service Required *
         </label>
@@ -192,7 +192,7 @@ export const ContactForm = ({ onSubmit }: ContactFormProps) => {
       <div>
         <label
           htmlFor="message"
-          className="block text-sm font-semibold text-text-primary mb-2"
+          className="block text-sm font-semibold text-primary mb-2"
         >
           Message
         </label>

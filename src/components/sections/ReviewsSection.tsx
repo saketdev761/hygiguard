@@ -107,14 +107,14 @@ export const ReviewsSection = ({
 
                 {/* Author Info */}
                 <div>
-                  <p className="font-semibold text-text-primary mb-1">
+                  <p className="font-semibold text-primary mb-1">
                     {review.name}
                   </p>
-                  <div className="flex items-center gap-1 text-text-secondary">
+                  <div className="flex items-center gap-1 text-secondary">
                     <MapPin className="w-4 h-4" />
                     <Text variant="caption">{review.location}</Text>
                   </div>
-                  <Text variant="small" className="text-text-secondary mt-1">
+                  <Text variant="small" className="text-secondary mt-1">
                     {formatDate(review.date)}
                   </Text>
                 </div>

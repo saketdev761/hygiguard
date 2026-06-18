@@ -101,8 +101,8 @@ const BeforeAfterCard = ({ image }: { image: BeforeAfterItem }) => {
         </div>
       </div>
       <div>
-        <p className="font-semibold text-text-primary">{image.category}</p>
-        <p className="text-sm text-text-secondary">{image.alt}</p>
+        <p className="font-semibold text-primary">{image.category}</p>
+        <p className="text-sm text-secondary">{image.alt}</p>
       </div>
     </div>
   );

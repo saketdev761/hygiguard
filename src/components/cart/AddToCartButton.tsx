@@ -29,7 +29,7 @@ export function AddToCartButton({ item, quantity = 1, mode = 'countable', onAdde
 
   if (mode === 'countable' && cartItem) {
     return (
-      <div className="flex items-center border border-primary rounded-lg overflow-hidden h-10 w-full sm:w-auto flex-shrink-0">
+      <div className="flex items-center justify-between gap-2  border border-primary rounded-lg overflow-hidden h-10 flex-shrink-0">
         <button
           onClick={() => updateQuantity(item.id, cartItem.quantity - 1)}
           className="px-4 hover:bg-primary/10 h-full transition-colors flex items-center justify-center text-primary"
@@ -56,7 +56,7 @@ export function AddToCartButton({ item, quantity = 1, mode = 'countable', onAdde
       size="sm"
       onClick={handleAddToCart}
       disabled={disabled}
-      className="w-full sm:w-auto min-w-32 h-10 flex-shrink-0"
+      className="h-10 flex-shrink-0"
     >
       {wasAdded ? (
         <>

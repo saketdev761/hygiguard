@@ -65,15 +65,15 @@ export function ServiceVariantRow({
       {/* Left: name + price */}
       <div className="flex items-center gap-4">
         <div>
-          <p className="font-semibold text-text-primary">{variant.name}</p>
+          <p className="font-semibold text-primary">{variant.name}</p>
           <div className="flex items-center gap-2 mt-1">
             <span className="text-2xl font-bold text-primary">
               ₹{variant.price}
-              <span className="text-sm font-normal text-text-secondary ml-1">
+              <span className="text-sm font-normal text-secondary ml-1">
                 {variant.unit ? `/ ${variant.unit}` : ''}
               </span>
             </span>
-            <span className="text-text-secondary line-through text-sm">
+            <span className="text-secondary line-through text-sm">
               ₹{variant.originalPrice}
             </span>
             <span
@@ -120,7 +120,7 @@ export function ServiceVariantRow({
         )}
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
+        <div className="flex gap-2">
           <AddToCartButton
             item={{
               id: cartItemId,

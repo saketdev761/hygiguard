@@ -43,7 +43,7 @@ export const Footer = () => {
               <li>
                 <Link
                   href="/"
-                  className="hover:text-secondary transition-colors"
+                  className="hover:text-secondary transition-colors text-white"
                 >
                   Home
                 </Link>
@@ -51,7 +51,7 @@ export const Footer = () => {
               <li>
                 <Link
                   href="/services"
-                  className="hover:text-secondary transition-colors"
+                  className="hover:text-secondary transition-colors text-white"
                 >
                   Services
                 </Link>
@@ -59,7 +59,7 @@ export const Footer = () => {
               <li>
                 <Link
                   href="/gallery"
-                  className="hover:text-secondary transition-colors"
+                  className="hover:text-secondary transition-colors text-white"
                 >
                   Gallery
                 </Link>
@@ -67,7 +67,7 @@ export const Footer = () => {
               <li>
                 <Link
                   href="/about"
-                  className="hover:text-secondary transition-colors"
+                  className="hover:text-secondary transition-colors text-white"
                 >
                   About
                 </Link>
@@ -75,7 +75,7 @@ export const Footer = () => {
               <li>
                 <Link
                   href="/contact"
-                  className="hover:text-secondary transition-colors"
+                  className="hover:text-secondary transition-colors text-white"
                 >
                   Contact
                 </Link>
@@ -91,7 +91,7 @@ export const Footer = () => {
                 <li key={service.slug}>
                   <Link
                     href={`/services/${service.slug}`}
-                    className="hover:text-secondary transition-colors"
+                    className="hover:text-secondary transition-colors text-white"
                   >
                     {service.name}
                   </Link>
@@ -108,7 +108,7 @@ export const Footer = () => {
                 <Phone className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
                 <a
                   href={SITE_CONFIG.phoneLink}
-                  className="hover:text-secondary transition-colors"
+                  className="hover:text-secondary transition-colors text-white"
                 >
                   {SITE_CONFIG.phone}
                 </a>
@@ -119,7 +119,7 @@ export const Footer = () => {
                   href={SITE_CONFIG.whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-secondary transition-colors"
+                  className="hover:text-secondary transition-colors text-white"
                 >
                   WhatsApp
                 </a>
@@ -128,7 +128,7 @@ export const Footer = () => {
                 <Mail className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
                 <a
                   href={SITE_CONFIG.emailLink}
-                  className="hover:text-secondary transition-colors"
+                  className="hover:text-secondary transition-colors text-white"
                 >
                   {SITE_CONFIG.email}
                 </a>
@@ -148,7 +148,7 @@ export const Footer = () => {
               href={SITE_CONFIG.social.facebook}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-gray-800 hover:bg-secondary rounded-full transition-colors"
+              className="p-3 bg-gray-800 hover:bg-secondary rounded-full transition-colors text-white"
               aria-label="Facebook"
             >
               <Facebook className="w-5 h-5" />
@@ -157,7 +157,7 @@ export const Footer = () => {
               href={SITE_CONFIG.social.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-gray-800 hover:bg-secondary rounded-full transition-colors"
+              className="p-3 bg-gray-800 hover:bg-secondary rounded-full transition-colors text-white"
               aria-label="Instagram"
             >
               <Instagram className="w-5 h-5" />
@@ -166,7 +166,7 @@ export const Footer = () => {
               href={SITE_CONFIG.social.twitter}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-gray-800 hover:bg-secondary rounded-full transition-colors"
+              className="p-3 bg-gray-800 hover:bg-secondary rounded-full transition-colors text-white"
               aria-label="Twitter"
             >
               <Twitter className="w-5 h-5" />
@@ -175,7 +175,7 @@ export const Footer = () => {
               href={SITE_CONFIG.social.youtube}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-gray-800 hover:bg-secondary rounded-full transition-colors"
+              className="p-3 bg-gray-800 hover:bg-secondary rounded-full transition-colors text-white"
               aria-label="YouTube"
             >
               <Youtube className="w-5 h-5" />
@@ -184,7 +184,7 @@ export const Footer = () => {
               href={SITE_CONFIG.social.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-gray-800 hover:bg-secondary rounded-full transition-colors"
+              className="p-3 bg-gray-800 hover:bg-secondary rounded-full transition-colors text-white"
               aria-label="LinkedIn"
             >
               <Linkedin className="w-5 h-5" />
@@ -198,7 +198,7 @@ export const Footer = () => {
             &copy; {currentYear} HygiGuard Solutions. All rights reserved. |
             Built with ❤️ for professional cleaning.
           </p>
-          <p className="mt-2">
+          {/* <p className="mt-2">
             <Link href="#" className="hover:text-secondary transition-colors">
               Privacy Policy
             </Link>{' '}
@@ -206,7 +206,7 @@ export const Footer = () => {
             <Link href="#" className="hover:text-secondary transition-colors">
               Terms of Service
             </Link>
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>

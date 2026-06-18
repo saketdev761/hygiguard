@@ -175,7 +175,7 @@ export const SERVICES = [
     title: 'Professional Sofa Cleaning in Lucknow',
     icon: 'Armchair',
     slug: 'sofa-cleaning',
-    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc',
+    image: '/assets/images/services/lucknow/sofa-cleaning.png',
     // SEO: alt text template — use as: alt={service.imageAlt}
     imageAlt:
       'Professional sofa cleaning service in Lucknow by HygiGuard Solutions',
@@ -300,7 +300,7 @@ export const SERVICES = [
     title: 'Professional Mattress Cleaning in Lucknow',
     icon: 'Bed',
     slug: 'mattress-cleaning',
-    image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85',
+    image: '/assets/images/services/lucknow/mattress-cleaning.png',
     imageAlt:
       'Professional mattress cleaning service in Lucknow by HygiGuard Solutions',
     shortDescription:
@@ -312,7 +312,7 @@ export const SERVICES = [
       items: [
         {
           name: 'Mattress Cleaning',
-          image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85',
+          image: '/assets/images/services/lucknow/mattress-cleaning.png',
           imageAlt: 'Mattress cleaning in Lucknow',
           variants: [
             { name: 'Single Side', price: 255, originalPrice: 300 },
@@ -396,7 +396,7 @@ export const SERVICES = [
     title: 'Professional Carpet Cleaning in Lucknow',
     icon: 'Waves',
     slug: 'carpet-cleaning',
-    image: 'https://images.unsplash.com/photo-1600166898405-da9535204843',
+    image: '/assets/images/services/lucknow/carpet-cleaning.png',
     imageAlt:
       'Professional carpet cleaning service in Lucknow by HygiGuard Solutions',
     shortDescription:
@@ -475,7 +475,7 @@ export const SERVICES = [
     title: 'Professional Chair Cleaning in Lucknow',
     icon: 'Chair',
     slug: 'chair-cleaning',
-    image: 'https://images.unsplash.com/photo-1503602642458-232111445657',
+    image: '/assets/images/services/lucknow/chair-cleaning.png',
     imageAlt:
       'Professional chair cleaning service in Lucknow by HygiGuard Solutions',
     shortDescription: 'Specialized cleaning for office and dining chairs.',
@@ -558,7 +558,7 @@ export const SERVICES = [
     title: 'Professional Cushion Cleaning in Lucknow',
     icon: 'Pillow',
     slug: 'cushion-cleaning',
-    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
+    image: '/assets/images/services/lucknow/cushion-cleaning.png',
     imageAlt:
       'Professional cushion cleaning service in Lucknow by HygiGuard Solutions',
     shortDescription:
@@ -570,7 +570,7 @@ export const SERVICES = [
       items: [
         {
           name: 'Cushion Cleaning',
-          image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
+          image: '/assets/images/services/lucknow/cushion-cleaning.png',
           imageAlt: 'Cushion cleaning in Lucknow',
           variants: [
             { name: 'Per Piece', price: 68, originalPrice: 80 },
@@ -643,7 +643,7 @@ export const SERVICES = [
     name: 'Curtain Cleaning',
     icon: 'PanelRight',
     slug: 'curtain-cleaning',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64',
+    image: '/assets/images/services/lucknow/curtain-cleaning.png',
     imageAlt:
       'Professional curtain cleaning service in Lucknow by HygiGuard Solutions',
     shortDescription:

@@ -106,7 +106,7 @@ export const FeaturesSection = ({
                       <IconComponent className="w-8 h-8 text-secondary" />
                     </div>
                   </div>
-                  <h3 className="font-bold text-text-primary mb-2">
+                  <h3 className="font-bold text-primary mb-2">
                     {feature.title}
                   </h3>
                   <Text variant="caption">{feature.description}</Text>

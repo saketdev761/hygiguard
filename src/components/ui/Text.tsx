@@ -11,9 +11,9 @@ interface TextProps extends React.HTMLAttributes<HTMLParagraphElement> {
 }
 
 const variants = {
-  body: "text-base leading-relaxed text-text-secondary",
-  caption: "text-sm text-text-secondary",
-  small: "text-xs text-text-secondary",
+  body: "text-base leading-relaxed text-secondary",
+  caption: "text-sm text-secondary",
+  small: "text-xs text-secondary",
 };
 
 export const Text = React.forwardRef<HTMLParagraphElement, TextProps>(
