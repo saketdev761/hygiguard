@@ -262,8 +262,7 @@ export const SERVICES = [
     faqs: [
       {
         question: 'How much does sofa cleaning cost in Lucknow?',
-        answer:
-          'Sofa cleaning in Lucknow starts from ₹299 for a 1-seater and ₹699 for a 3-seater fabric sofa at HygiGuard Solutions. Leather sofa cleaning starts from ₹899 for a 3-seater.',
+        answer: 'Sofa cleaning in Lucknow starts from ₹170.',
       },
       {
         question: 'How long does sofa cleaning take?',

@@ -174,14 +174,15 @@ export default async function ServiceDetailPage({
                   </Button>
                 </a>
                 <a href={SITE_CONFIG.phoneLink}>
-                  <Button
-                    size="lg"
-                    className="flex items-center gap-2 w-full sm:w-auto bg-white text-primary font-semibold hover:bg-white/90"
-                  >
-                    <Phone className="w-5 h-5" />
-                    Call Now
-                  </Button>
-                </a>
+                              <Button
+                                variant="outline"
+                                size="lg"
+                                className="border-white text-white hover:bg-white hover:text-primary flex items-center gap-2 min-w-max"
+                              >
+                                <Phone className="w-5 h-5" />
+                                Call Now
+                              </Button>
+                            </a>
               </div>
             </div>
 
