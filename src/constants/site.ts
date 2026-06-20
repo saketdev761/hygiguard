@@ -260,36 +260,52 @@ export const SERVICES = [
     ],
     // AEO: Service-specific FAQs — used for FAQPage schema on /services/sofa-cleaning
     faqs: [
-      {
-        question: 'How much does sofa cleaning cost in Lucknow?',
-        answer: 'Sofa cleaning in Lucknow starts from ₹170.',
-      },
-      {
-        question: 'How long does sofa cleaning take?',
-        answer:
-          'A standard sofa cleaning takes 1–2 hours depending on size and condition. Drying takes an additional 2–3 hours.',
-      },
-      {
-        question: 'Is sofa cleaning safe for children and pets?',
-        answer:
-          'Yes, HygiGuard Solutions uses eco-friendly, non-toxic cleaning solutions that are completely safe for children and pets.',
-      },
-      {
-        question: 'Do you offer same-day sofa cleaning in Lucknow?',
-        answer:
-          'Yes, same-day sofa cleaning service is available across Lucknow including Gomti Nagar, Indira Nagar, and Hazratganj. Call or WhatsApp to check slot availability.',
-      },
-      {
-        question: 'Can you remove old stains from a sofa?',
-        answer:
-          'HygiGuard Solutions can remove most common stains including food, coffee, dust, and marks. Deep or permanent stains may require special treatment.',
-      },
-      {
-        question: 'How often should I get my sofa cleaned?',
-        answer:
-          'Sofa cleaning is recommended every 6–12 months depending on usage, dust exposure, and household conditions.',
-      },
-    ],
+  {
+    question: 'How much does sofa cleaning cost in Lucknow?',
+    answer:
+      'Sofa cleaning in Lucknow starts from ₹170 per seat, depending on sofa size, fabric type, and condition. Final pricing is confirmed before the service begins.',
+  },
+  {
+    question: 'What is the difference between sofa dry cleaning and wet cleaning?',
+    answer:
+      'Sofa dry cleaning uses low-moisture methods and specialized solutions to clean the fabric without soaking it, so the sofa dries faster and is safe for delicate or wooden-frame sofas. Wet cleaning uses water-based shampooing and extraction, which deep-cleans more thoroughly but takes longer to dry.',
+  },
+  {
+    question: 'How long does sofa cleaning take?',
+    answer:
+      'A standard sofa cleaning takes 1–2 hours depending on size and condition. Drying takes an additional 2–3 hours.',
+  },
+  {
+    question: 'Is sofa cleaning safe for children and pets?',
+    answer:
+      'Yes, HygiGuard Solutions uses eco-friendly, non-toxic cleaning solutions that are completely safe for children and pets.',
+  },
+  {
+    question: 'Can you clean leather sofas?',
+    answer:
+      'Yes, HygiGuard Solutions offers specialized leather sofa cleaning using gentle, leather-safe products that clean and condition without cracking or fading the material.',
+  },
+  {
+    question: 'Do you offer same-day sofa cleaning in Lucknow?',
+    answer:
+      'Yes, same-day sofa cleaning service is available across Lucknow including Gomti Nagar, Indira Nagar, and Hazratganj. Call or WhatsApp to check slot availability.',
+  },
+  {
+    question: 'Can you remove old stains from a sofa?',
+    answer:
+      'HygiGuard Solutions can remove most common stains including food, coffee, dust, and marks. Deep or permanent stains may require special treatment.',
+  },
+  {
+    question: 'Does sofa cleaning remove bad odor and dust mites?',
+    answer:
+      'Yes, our deep cleaning process removes embedded dust, allergens, and odor-causing bacteria, leaving the sofa fresh and hygienic.',
+  },
+  {
+    question: 'How often should I get my sofa cleaned?',
+    answer:
+      'Sofa cleaning is recommended every 6–12 months depending on usage, dust exposure, and household conditions.',
+  },
+],
     price: 'Starting from ₹170',
   },
 
@@ -353,22 +369,47 @@ export const SERVICES = [
       },
     ],
     faqs: [
-      {
-        question: 'How much does carpet cleaning cost in Lucknow?',
-        answer:
-          'Carpet cleaning in Lucknow starts from ₹399 for a small carpet at HygiGuard Solutions. Large carpet cleaning starts from ₹1299.',
-      },
-      {
-        question: 'Can carpet cleaning remove old stains?',
-        answer:
-          'Yes, HygiGuard Solutions uses professional-grade deep cleaning equipment that can remove most embedded stains, dirt, and odors from carpets.',
-      },
-      {
-        question: 'How long does carpet cleaning take?',
-        answer:
-          'Carpet cleaning typically takes 1–3 hours depending on carpet size and level of soiling. Drying takes an additional 3–6 hours.',
-      },
-    ],
+  {
+    question: 'How much does carpet cleaning cost in Lucknow?',
+    answer:
+    'Carpet cleaning in Lucknow is priced at ₹12.75 per sq. ft. at HygiGuard Solutions. This means a small carpet starts from around ₹399, and a large carpet starts from around ₹1299, depending on exact size and condition.',
+},
+  {
+    question: 'Do you clean the carpet at my home, or do you pick it up?',
+    answer:
+      'HygiGuard Solutions offers on-site doorstep carpet cleaning at your home, so you don\'t need to move or transport your carpet. For deep shampoo cleaning, the carpet is cleaned and dried at your location.',
+  },
+  {
+    question: 'Can carpet cleaning remove old stains?',
+    answer:
+      'Yes, HygiGuard Solutions uses professional-grade deep cleaning equipment that can remove most embedded stains, dirt, and odors from carpets.',
+  },
+  {
+    question: 'Is carpet cleaning safe for children and pets, and does it remove dust mites?',
+    answer:
+      'Yes, we use eco-friendly, non-toxic cleaning solutions safe for children and pets. Our deep cleaning process also removes embedded dust mites, allergens, and odor-causing bacteria for a healthier home.',
+  },
+  {
+    question: 'Can you clean wool or delicate carpets?',
+    answer:
+      'Yes, HygiGuard Solutions cleans both synthetic and wool/delicate carpets, using gentler methods and solutions for sensitive fibers to avoid damage or color bleeding.',
+  },
+  {
+    question: 'How long does carpet cleaning take?',
+    answer:
+      'Carpet cleaning typically takes 1–3 hours depending on carpet size and level of soiling. Drying takes an additional 3–6 hours.',
+  },
+  {
+    question: 'Do you offer same-day carpet cleaning in Lucknow?',
+    answer:
+      'Yes, same-day carpet cleaning service is available across Lucknow including Gomti Nagar, Indira Nagar, and Hazratganj. Call or WhatsApp to check slot availability.',
+  },
+  {
+    question: 'How often should I get my carpet cleaned?',
+    answer:
+      'Carpet cleaning is recommended every 6–12 months for normal households, and every 3–6 months if you have pets, kids, or high foot traffic.',
+  },
+],
     price: 'Starting from ₹12.75 / Sq. Ft.',
   },
 
@@ -384,7 +425,7 @@ export const SERVICES = [
     shortDescription:
       'Professional mattress cleaning for a healthier sleep environment.',
     description:
-      'HygiGuard Solutions provides professional mattress cleaning in Lucknow starting at ₹499. Our service eliminates dust mites, bacteria, and allergens for a healthier sleep surface. Doorstep service available 7 days a week across all major areas of Lucknow.',
+      'HygiGuard Solutions provides professional mattress cleaning in Lucknow starting at ₹255 per side. Our service eliminates dust mites, bacteria, and allergens for a healthier sleep surface. Doorstep service available 7 days a week across all major areas of Lucknow.',
     pricing: {
       startingFrom: 255,
       items: [
@@ -444,27 +485,47 @@ export const SERVICES = [
       },
     ],
     faqs: [
-      {
-        question: 'How much does mattress cleaning cost in Lucknow?',
-        answer:
-          'Mattress cleaning in Lucknow starts from ₹255 for a single-side single mattress at HygiGuard Solutions. Double mattress cleaning starts from ₹425.',
-      },
-      {
-        question: 'How often should I get my mattress cleaned?',
-        answer:
-          'Mattress cleaning is recommended every 6 months to remove dust mites, bacteria, and allergens that accumulate over time.',
-      },
-      {
-        question: 'Does mattress cleaning remove dust mites?',
-        answer:
-          'Yes, HygiGuard Solutions uses deep vacuuming and sanitization methods that effectively eliminate dust mites, bacteria, and allergens from your mattress.',
-      },
-      {
-        question: 'How long does mattress cleaning take?',
-        answer:
-          'Mattress cleaning typically takes 1–2 hours. Drying may take an additional 2–4 hours depending on the mattress thickness.',
-      },
-    ],
+  {
+    question: 'How much does mattress cleaning cost in Lucknow?',
+    answer:
+      'Mattress cleaning in Lucknow starts from ₹255 for a single-side single mattress at HygiGuard Solutions. Double mattress cleaning starts from ₹425.',
+  },
+  {
+    question: 'How often should I get my mattress cleaned?',
+    answer:
+      'Mattress cleaning is recommended every 6 months to remove dust mites, bacteria, and allergens that accumulate over time.',
+  },
+  {
+    question: 'Does mattress cleaning remove dust mites?',
+    answer:
+      'Yes, HygiGuard Solutions uses deep vacuuming and sanitization methods that effectively eliminate dust mites, bacteria, and allergens from your mattress.',
+  },
+  {
+    question: 'Can you remove urine stains and odor from a mattress?',
+    answer:
+      'Yes, HygiGuard Solutions treats urine stains, sweat marks, and odor-causing bacteria using targeted stain removal and sanitization, leaving the mattress fresh and hygienic.',
+  },
+  {
+    question: 'What does single-side mattress cleaning mean? Can both sides be cleaned?',
+    answer:
+      'Single-side cleaning covers the top sleeping surface of the mattress. Both-side cleaning is also available on request for a more thorough deep clean, covering the underside as well.',
+  },
+  {
+    question: 'Will my mattress get soaked? Can I sleep on it the same night?',
+    answer:
+      'No, HygiGuard Solutions uses low-moisture cleaning methods, so the mattress is not soaked. With proper drying time of 2–4 hours, most mattresses are ready to use the same day.',
+  },
+  {
+    question: 'How long does mattress cleaning take?',
+    answer:
+      'Mattress cleaning typically takes 1–2 hours. Drying may take an additional 2–4 hours depending on the mattress thickness.',
+  },
+  {
+    question: 'Is mattress cleaning safe for allergy and asthma sufferers?',
+    answer:
+      'Yes, our deep sanitization process removes dust mites, dander, and allergens that commonly trigger allergies and asthma, making it especially beneficial for sensitive sleepers.',
+  },
+],
     price: 'Starting from ₹255',
   },
 
@@ -539,17 +600,42 @@ export const SERVICES = [
       },
     ],
     faqs: [
-      {
-        question: 'How much does chair cleaning cost in Lucknow?',
-        answer:
-          'Chair cleaning in Lucknow starts from ₹85 per dining chair at HygiGuard Solutions.',
-      },
-      {
-        question: 'Do you clean office chairs in Lucknow?',
-        answer:
-          'Yes, HygiGuard Solutions cleans office chairs, dining chairs, and all upholstered seating across Lucknow with professional equipment.',
-      },
-    ],
+  {
+    question: 'How much does chair cleaning cost in Lucknow?',
+    answer:
+      'Chair cleaning in Lucknow starts from ₹85 per dining chair at HygiGuard Solutions.',
+  },
+  {
+    question: 'Do you clean office chairs in Lucknow?',
+    answer:
+      'Yes, HygiGuard Solutions cleans office chairs, dining chairs, and all upholstered seating across Lucknow with professional equipment.',
+  },
+  {
+    question: 'How long does chair cleaning take?',
+    answer:
+      'Chair cleaning typically takes 15–30 minutes per chair depending on fabric and condition. Drying takes an additional 1–2 hours.',
+  },
+  {
+    question: 'Is it safe to clean mesh office chairs?',
+    answer:
+      'Yes, HygiGuard Solutions uses gentle, low-moisture cleaning methods specifically suited for mesh chairs, so the mesh fibers are not damaged or frayed during cleaning.',
+  },
+  {
+    question: 'Do you offer chair cleaning for offices, restaurants, and banquet halls in Lucknow?',
+    answer:
+      'Yes, HygiGuard Solutions provides bulk chair cleaning for offices, restaurants, banquet halls, and event venues across Lucknow, with pricing based on the number and type of chairs.',
+  },
+  {
+    question: 'Do you offer monthly or quarterly cleaning contracts for businesses?',
+    answer:
+      'Yes, HygiGuard Solutions offers recurring cleaning contracts (AMC) for offices, restaurants, and banquet halls, so businesses can schedule regular chair and upholstery cleaning without booking each time separately.',
+  },
+  {
+    question: 'How often should chairs be professionally cleaned?',
+    answer:
+      'Dining and office chairs are recommended to be deep cleaned every 6 months, or more frequently for high-traffic commercial spaces like restaurants and offices.',
+  },
+],
     price: 'Starting from ₹85',
   },
 
@@ -625,17 +711,42 @@ export const SERVICES = [
       },
     ],
     faqs: [
-      {
-        question: 'How much does cushion cleaning cost in Lucknow?',
-        answer:
-          'Cushion cleaning starts from ₹49 per sofa cushion at HygiGuard Solutions in Lucknow. A set of 4 cushions costs ₹179.',
-      },
-      {
-        question: 'Do you clean all types of cushions?',
-        answer:
-          'Yes, HygiGuard Solutions cleans sofa cushions, floor cushions, and decorative cushions of all fabric types in Lucknow.',
-      },
-    ],
+  {
+    question: 'How much does cushion cleaning cost in Lucknow?',
+    answer:
+      'Cushion cleaning starts from ₹49 per sofa cushion at HygiGuard Solutions in Lucknow. A set of 4 cushions costs ₹179.',
+  },
+  {
+    question: 'Do you clean all types of cushions?',
+    answer:
+      'Yes, HygiGuard Solutions cleans sofa cushions, floor cushions, and decorative cushions of all fabric types in Lucknow.',
+  },
+  {
+    question: 'Will cleaning affect the cushion filling or shape?',
+    answer:
+      'No, HygiGuard Solutions uses low-moisture, fabric-safe cleaning methods that clean the cover thoroughly without soaking or clumping the inner filling, so your cushions keep their original shape and fluffiness.',
+  },
+  {
+    question: 'Can cushion cleaning remove stains and odor?',
+    answer:
+      'Yes, HygiGuard Solutions removes common stains, dust, and odor-causing bacteria from cushions using professional-grade cleaning solutions.',
+  },
+  {
+    question: 'How long does cushion cleaning take?',
+    answer:
+      'Cushion cleaning typically takes 10–20 minutes per cushion. Drying takes an additional 1–2 hours.',
+  },
+  {
+    question: 'Is cushion cleaning safe for children and pets?',
+    answer:
+      'Yes, HygiGuard Solutions uses eco-friendly, non-toxic cleaning solutions that are completely safe for children and pets.',
+  },
+  {
+    question: 'How often should cushions be cleaned?',
+    answer:
+      'Cushion cleaning is recommended every 6 months, or more frequently for cushions used daily or exposed to spills and pets.',
+  },
+],
     price: 'Starting from ₹68',
   },
 
@@ -723,23 +834,48 @@ export const SERVICES = [
           'Cleaned curtains are dried, pressed to remove wrinkles, and re-hung to restore their original drape and appearance.',
       },
     ],
-    faqs: [
-      {
-        question: 'How much does curtain cleaning cost in Lucknow?',
-        answer:
-          'Curtain cleaning in Lucknow starts from ₹12.75 / Sq. Ft. at HygiGuard Solutions.',
-      },
-      {
-        question: 'Do you clean blackout curtains in Lucknow?',
-        answer:
-          'Yes, HygiGuard Solutions cleans all curtain types including blackout, velvet, sheer, and designer curtains across Lucknow.',
-      },
-      {
-        question: 'Do you offer curtain pick-up and drop service in Lucknow?',
-        answer:
-          'Yes, HygiGuard Solutions offers both on-site curtain cleaning and pick-up and drop service across Lucknow.',
-      },
-    ],
+   faqs: [
+  {
+    question: 'How much does curtain cleaning cost in Lucknow?',
+    answer:
+      'Curtain cleaning in Lucknow starts from ₹12.75 / Sq. Ft. at HygiGuard Solutions.',
+  },
+  {
+    question: 'Do you clean blackout curtains in Lucknow?',
+    answer:
+      'Yes, HygiGuard Solutions cleans all curtain types including blackout, velvet, sheer, and designer curtains across Lucknow.',
+  },
+  {
+    question: 'Do you offer curtain pick-up and drop service in Lucknow?',
+    answer:
+      'Yes, HygiGuard Solutions offers both on-site curtain cleaning and pick-up and drop service across Lucknow.',
+  },
+  {
+    question: 'Do I need to take down the curtains myself?',
+    answer:
+      'No, our team will take down your curtains carefully before cleaning and rehang them once the cleaning and drying process is complete.',
+  },
+  {
+    question: 'How long does curtain cleaning take to return?',
+    answer:
+      'For pick-up and drop service, curtains are typically cleaned and returned within 24–48 hours. On-site cleaning is completed the same day, with drying taking a few additional hours.',
+  },
+  {
+    question: 'Is curtain cleaning safe for kids and pets?',
+    answer:
+      'Yes, HygiGuard Solutions uses eco-friendly, non-toxic cleaning solutions that are completely safe for children and pets.',
+  },
+  {
+    question: 'Can curtain cleaning remove mold and musty smell from monsoon dampness?',
+    answer:
+      'Yes, our deep cleaning process removes mold, mildew, dust mites, and musty odors that build up in curtains during Lucknow\'s monsoon season.',
+  },
+  {
+    question: 'How often should curtains be cleaned?',
+    answer:
+      'Curtains are recommended to be deep cleaned every 6 months to prevent dust, allergens, and fabric damage from long-term dirt buildup.',
+  },
+],
     price: 'Starting from ₹12.75 / Sq. Ft.',
   },
 ];
@@ -863,19 +999,19 @@ export const TRUST_INDICATORS = [
 // FAQ Data
 export const FAQ = [
   {
-    question: 'How long does sofa cleaning take?',
+    question: 'What cleaning services does HygiGuard Solutions offer in Lucknow?',
     answer:
-      'Sofa cleaning by HygiGuard Solutions in Lucknow typically takes 1–2 hours depending on sofa size, fabric type, and condition. Drying takes an additional 2–3 hours.',
+      'HygiGuard Solutions provides doorstep cleaning for sofas, carpets, mattresses, dining and office chairs, curtains, and cushions across Lucknow, using professional-grade eco-friendly methods.',
   },
   {
-    question: 'How much does sofa cleaning cost in Lucknow?',
+    question: 'How much do your cleaning services cost?',
     answer:
-      'Sofa cleaning in Lucknow starts from ₹299 for a 1-seater and ₹699 for a 3-seater at HygiGuard Solutions. Prices vary by fabric type and sofa size. Contact us for an exact quote.',
+      'Pricing varies by service: sofa cleaning starts from ₹170 per seat, carpet and curtain cleaning is ₹12.75 per sq. ft., mattress cleaning starts from ₹255 (single-side single), chair cleaning starts from ₹85 per chair, and cushion cleaning starts from ₹49 per piece. Contact us for an exact quote.',
   },
   {
-    question: 'Do you provide sofa cleaning at home in Lucknow?',
+    question: 'Do you provide cleaning services at home in Lucknow?',
     answer:
-      'Yes, HygiGuard Solutions provides doorstep sofa cleaning services across Lucknow including Gomti Nagar, Indira Nagar, Aliganj, Jankipuram, Hazratganj, and nearby areas.',
+      'Yes, HygiGuard Solutions provides doorstep cleaning services across Lucknow including Gomti Nagar, Indira Nagar, Aliganj, Jankipuram, Hazratganj, and nearby areas.',
   },
   {
     question: 'Is your cleaning solution safe for children and pets?',
@@ -883,33 +1019,37 @@ export const FAQ = [
       'Yes, HygiGuard Solutions uses eco-friendly, non-toxic, fabric-safe cleaning solutions that are safe for children and pets when used as recommended.',
   },
   {
-    question: 'Can you remove old stains from a sofa?',
+    question: 'Can you remove old stains and odors?',
     answer:
-      'HygiGuard Solutions can remove most common stains like food, coffee, dust, and marks. Deep or permanent stains may require special treatment and complete removal depends on fabric condition.',
+      'HygiGuard Solutions can remove most common stains and odors from sofas, carpets, mattresses, and upholstery. Deep or permanent stains may require special treatment, and complete removal depends on fabric condition.',
   },
   {
-    question: 'Do you offer same-day sofa cleaning service in Lucknow?',
+    question: 'Do you offer same-day cleaning service in Lucknow?',
     answer:
-      'Yes, HygiGuard Solutions offers same-day sofa cleaning in Lucknow depending on slot availability. Call or WhatsApp us for quick booking.',
+      'Yes, HygiGuard Solutions offers same-day cleaning service in Lucknow depending on slot availability. Call or WhatsApp us for quick booking.',
   },
   {
-    question: 'Do you clean mattresses and carpets in Lucknow?',
+    question: 'Do you offer cleaning services for offices, restaurants, and banquet halls?',
     answer:
-      'Yes, HygiGuard Solutions provides mattress cleaning starting from ₹499 and carpet cleaning starting from ₹399 in Lucknow using professional deep cleaning methods.',
+      'Yes, HygiGuard Solutions provides bulk cleaning services for offices, restaurants, banquet halls, and event venues across Lucknow, in addition to residential homes.',
   },
   {
-    question: 'How often should I get my sofa cleaned?',
+    question: 'How often should I get my sofa, carpet, or mattress cleaned?',
     answer:
-      'Sofa cleaning is recommended every 6–12 months depending on usage, dust exposure, and household conditions to maintain hygiene and extend sofa life.',
+      'Professional deep cleaning is recommended every 6–12 months depending on usage, dust exposure, and household conditions to maintain hygiene and extend the life of your furniture.',
   },
   {
     question: 'Do I need to prepare anything before the cleaning service?',
     answer:
-      'No special preparation is required. Just keep the sofa or item to be cleaned accessible and remove personal items before the HygiGuard Solutions team arrives.',
+      'No special preparation is required. Just keep the item to be cleaned accessible and remove personal items before the HygiGuard Solutions team arrives.',
   },
   {
-    question:
-      'Why choose HygiGuard Solutions for cleaning services in Lucknow?',
+    question: 'How do I book a cleaning service with HygiGuard Solutions?',
+    answer:
+      'You can book a cleaning service by calling or messaging us on WhatsApp. We confirm your slot and arrive at your doorstep at the scheduled time.',
+  },
+  {
+    question: 'Why choose HygiGuard Solutions for cleaning services in Lucknow?',
     answer:
       'HygiGuard Solutions provides professional doorstep cleaning services in Lucknow with trained staff, eco-friendly products, affordable pricing, and same-day availability across Gomti Nagar, Indira Nagar, Aliganj, and all major areas.',
   },

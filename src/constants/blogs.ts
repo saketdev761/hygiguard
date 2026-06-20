@@ -15,7 +15,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'why-professional-sofa-cleaning-is-essential',
     title: 'Why Professional Sofa Cleaning is Essential for Your Home',
     summary: 'Discover the hidden dangers lurking in your upholstery and why vacuuming isn\'t enough to keep your family safe from allergens.',
-    publishDate: '2026-06-10T08:00:00Z', // Past date
+    publishDate: '2026-06-16T08:00:00Z', 
     author: 'HygiGuard Expert',
     image: '/assets/images/services/lucknow/sofa-cleaning.png',
     imageAlt: 'Professional sofa cleaning in progress',
@@ -42,7 +42,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'carpet-cleaning-myths-busted',
     title: 'Top 5 Carpet Cleaning Myths Busted',
     summary: 'Does cleaning your carpet make it get dirty faster? We debunk the most common myths about professional carpet cleaning.',
-    publishDate: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000).toISOString(), // 3 days in the future
+    publishDate: '2026-06-20T11:35:00.000Z',
     author: 'HygiGuard Expert',
     image: '/assets/images/services/lucknow/carpet-cleaning.png',
     imageAlt: 'Clean carpet in a living room',
