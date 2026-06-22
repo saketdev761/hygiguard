@@ -5,12 +5,17 @@ import { SITE_CONFIG } from '@/constants/site';
 import { Container, Section, Heading, Text } from '@/components/ui';
 
 export const metadata: Metadata = {
-  title: `Cleaning Tips & Blog | ${SITE_CONFIG.name}`,
+  title: 'Cleaning Tips & Blog',
   description: 'Expert tips on sofa cleaning, carpet maintenance, and keeping your home healthy by HygiGuard Solutions.',
   openGraph: {
-    title: `Cleaning Tips & Blog | ${SITE_CONFIG.name}`,
+    title: 'Cleaning Tips & Blog',
     description: 'Expert tips on sofa cleaning, carpet maintenance, and keeping your home healthy by HygiGuard Solutions.',
     url: `${SITE_CONFIG.baseUrl}/blog`,
+  },
+  twitter: {
+    title: 'Cleaning Tips & Blog',
+    description: 'Expert tips on sofa cleaning, carpet maintenance, and keeping your home healthy by HygiGuard Solutions.',
+    images: [`${SITE_CONFIG.baseUrl}/og-image.jpg`],
   },
   alternates: {
     canonical: 'https://hygiguardsolutions.com/blog',

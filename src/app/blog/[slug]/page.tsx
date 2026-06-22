@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
   }
 
   return {
-    title: `${blog.title} | ${SITE_CONFIG.name}`,
+    title: blog.title,
     description: blog.summary,
     openGraph: {
       title: blog.title,
@@ -45,6 +45,11 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
       publishedTime: blog.publishDate,
       authors: [blog.author],
       tags: blog.tags,
+    },
+    twitter: {
+      title: blog.title,
+      description: blog.summary,
+      images: [blog.image ? `${SITE_CONFIG.baseUrl}${blog.image}` : `${SITE_CONFIG.baseUrl}/og-image.jpg`],
     },
     alternates: {
       canonical: `https://hygiguardsolutions.com/blog/${slug}`,
