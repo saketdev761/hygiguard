@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     url: `${SITE_CONFIG.baseUrl}/services`,
     type: 'website',
   },
+  alternates: {
+    canonical: 'https://hygiguardsolutions.com/services',
+  },
 };
 
 export default function ServicesPage() {

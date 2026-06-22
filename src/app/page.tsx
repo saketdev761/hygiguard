@@ -1,8 +1,11 @@
-/**
- * Home Page
- */
-
 import React from 'react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://hygiguardsolutions.com',
+  },
+};
 import {
   HeroSection,
   // BeforeAfterSection,

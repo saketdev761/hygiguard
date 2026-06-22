@@ -52,6 +52,9 @@ export async function generateMetadata({
       url: `${SITE_CONFIG.baseUrl}/services/${slug}`,
       type: 'website',
     },
+    alternates: {
+      canonical: `https://hygiguardsolutions.com/services/${slug}`,
+    },
   };
 }
 

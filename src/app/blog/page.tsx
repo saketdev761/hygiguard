@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     description: 'Expert tips on sofa cleaning, carpet maintenance, and keeping your home healthy by HygiGuard Solutions.',
     url: `${SITE_CONFIG.baseUrl}/blog`,
   },
+  alternates: {
+    canonical: 'https://hygiguardsolutions.com/blog',
+  },
 };
 
 export default function BlogPage() {

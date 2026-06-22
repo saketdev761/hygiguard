@@ -15,4 +15,7 @@ export const metadata: Metadata = {
     description: 'Get in touch with HygiGuard Solutions',
     url: `${SITE_CONFIG.baseUrl}/contact`,
   },
+  alternates: {
+    canonical: 'https://hygiguardsolutions.com/contact',
+  },
 };

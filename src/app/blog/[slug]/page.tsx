@@ -46,6 +46,9 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
       authors: [blog.author],
       tags: blog.tags,
     },
+    alternates: {
+      canonical: `https://hygiguardsolutions.com/blog/${slug}`,
+    },
   };
 }
 

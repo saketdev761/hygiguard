@@ -4,8 +4,7 @@
 
 import type { Metadata } from 'next';
 import { SITE_CONFIG } from '@/constants/site';
-import { Header, Footer, FloatingCTA } from '@/components/layout';
-import { CartProvider } from '@/context/CartContext';
+import { AppLayout } from '@/components/layout/AppLayout';
 import '@/styles/globals.css';
 import { Inter, Poppins } from 'next/font/google';
 
@@ -63,9 +62,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  alternates: {
-    canonical: SITE_CONFIG.baseUrl,
-  },
 };
 
 export default function RootLayout({
@@ -89,12 +85,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.variable} ${poppins.variable} antialiased`}>
-        <CartProvider>
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-          <FloatingCTA />
-        </CartProvider>
+        <AppLayout>{children}</AppLayout>
       </body>
     </html>
   );

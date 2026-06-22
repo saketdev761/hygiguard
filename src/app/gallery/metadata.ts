@@ -21,4 +21,7 @@ export const metadata: Metadata = {
     description: 'View our professional cleaning transformations',
     url: `${SITE_CONFIG.baseUrl}/gallery`,
   },
+  alternates: {
+    canonical: 'https://hygiguardsolutions.com/gallery',
+  },
 };
