@@ -34,8 +34,8 @@ export const SITE_CONFIG = {
     wednesday: '9:00 AM - 8:00 PM',
     thursday: '9:00 AM - 8:00 PM',
     friday: '9:00 AM - 8:00 PM',
-    saturday: '9:00 AM - 6:00 PM',
-    sunday: '9:00 AM - 6:00 PM',
+    saturday: '9:00 AM - 8:00 PM',
+    sunday: '9:00 AM - 8:00 PM',
   },
 
   // Service Areas
@@ -65,7 +65,7 @@ export const SITE_CONFIG = {
 
   // URLs
   baseUrl: 'https://www.hygiguardsolutions.com',
-  logoUrl: '/logo.svg',
+  logoUrl: '/assets/images/hygiguard-logo.png',
 
   // SEO
   keywords: [
@@ -93,7 +93,7 @@ export const SITE_CONFIG = {
       '@context': 'https://schema.org',
       '@type': ['LocalBusiness', 'Organization'],
       name: 'HygiGuard Solutions',
-      image: 'https://www.hygiguardsolutions.com/og-image.jpg',
+      image: 'https://www.hygiguardsolutions.com/assets/images/hygiguard-logo.png',
       telephone: '+917905443905',
       email: 'hygiguardsolutions@gmail.com',
       url: 'https://www.hygiguardsolutions.com',
