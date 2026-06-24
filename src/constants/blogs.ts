@@ -57,7 +57,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <h2>Myth 3: Vacuuming Once a Week is Enough</h2>
       <p>While vacuuming is great, it doesn't remove the sticky soils and oils that bind to the fibers. Professional deep cleaning is required every 6-12 months.</p>
     `
-  }
+  },
 ];
 
 // Helper function to get only published blogs, sorted by date descending

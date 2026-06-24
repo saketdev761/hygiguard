@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: 'https://hygiguardsolutions.com',
+    canonical: 'https://www.hygiguardsolutions.com',
   },
 };
 import {

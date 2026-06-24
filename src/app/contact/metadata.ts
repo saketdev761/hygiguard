@@ -16,6 +16,6 @@ export const metadata: Metadata = {
     url: `${SITE_CONFIG.baseUrl}/contact`,
   },
   alternates: {
-    canonical: 'https://hygiguardsolutions.com/contact',
+    canonical: 'https://www.hygiguardsolutions.com/contact',
   },
 };

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     'Learn about HygiGuard Solutions, our mission, values, and commitment to professional cleaning.',
   alternates: {
-    canonical: 'https://hygiguardsolutions.com/about',
+    canonical: 'https://www.hygiguardsolutions.com/about',
   },
 };
 

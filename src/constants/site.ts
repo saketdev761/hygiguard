@@ -64,7 +64,7 @@ export const SITE_CONFIG = {
   },
 
   // URLs
-  baseUrl: 'https://hygiguardsolutions.com',
+  baseUrl: 'https://www.hygiguardsolutions.com',
   logoUrl: '/logo.svg',
 
   // SEO
@@ -93,10 +93,10 @@ export const SITE_CONFIG = {
       '@context': 'https://schema.org',
       '@type': ['LocalBusiness', 'Organization'],
       name: 'HygiGuard Solutions',
-      image: 'https://hygiguardsolutions.com/og-image.jpg',
+      image: 'https://www.hygiguardsolutions.com/og-image.jpg',
       telephone: '+917905443905',
       email: 'hygiguardsolutions@gmail.com',
-      url: 'https://hygiguardsolutions.com',
+      url: 'https://www.hygiguardsolutions.com',
       priceRange: '₹₹',
       foundingDate: '2024',
       description:

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     images: [`${SITE_CONFIG.baseUrl}/og-image.jpg`],
   },
   alternates: {
-    canonical: 'https://hygiguardsolutions.com/blog',
+    canonical: 'https://www.hygiguardsolutions.com/blog',
   },
 };
 

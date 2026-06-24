@@ -22,6 +22,6 @@ export const metadata: Metadata = {
     url: `${SITE_CONFIG.baseUrl}/gallery`,
   },
   alternates: {
-    canonical: 'https://hygiguardsolutions.com/gallery',
+    canonical: 'https://www.hygiguardsolutions.com/gallery',
   },
 };

@@ -47,12 +47,12 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
       tags: blog.tags,
     },
     twitter: {
-      title: blog.title,
+      title: `${blog.title} | ${SITE_CONFIG.name}`,
       description: blog.summary,
       images: [blog.image ? `${SITE_CONFIG.baseUrl}${blog.image}` : `${SITE_CONFIG.baseUrl}/og-image.jpg`],
     },
     alternates: {
-      canonical: `https://hygiguardsolutions.com/blog/${slug}`,
+      canonical: `${SITE_CONFIG.baseUrl}/blog/${slug}`,
     },
   };
 }

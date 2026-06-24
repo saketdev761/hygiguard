@@ -52,8 +52,13 @@ export async function generateMetadata({
       url: `${SITE_CONFIG.baseUrl}/services/${slug}`,
       type: 'website',
     },
+    twitter: {
+      title: `${service.title} | ${SITE_CONFIG.name}`,
+      description: service.description,
+      images: [service.image || `${SITE_CONFIG.baseUrl}/og-image.jpg`],
+    },
     alternates: {
-      canonical: `https://hygiguardsolutions.com/services/${slug}`,
+      canonical: `${SITE_CONFIG.baseUrl}/services/${slug}`,
     },
   };
 }

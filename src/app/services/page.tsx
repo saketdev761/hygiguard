@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   alternates: {
-    canonical: 'https://hygiguardsolutions.com/services',
+    canonical: 'https://www.hygiguardsolutions.com/services',
   },
 };
 
