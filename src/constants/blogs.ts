@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -57,6 +59,20 @@ export const BLOG_POSTS: BlogPost[] = [
       <h2>Myth 3: Vacuuming Once a Week is Enough</h2>
       <p>While vacuuming is great, it doesn't remove the sticky soils and oils that bind to the fibers. Professional deep cleaning is required every 6-12 months.</p>
     `
+  },
+  {
+  slug: 'sofa-dry-cleaning-in-lucknow',
+  title: 'Sofa Dry Cleaning in Lucknow',
+  summary: 'Sofa dry cleaning in Lucknow is a process of cleaning sofas without using water. It is a safe and effective way to clean sofas and remove dirt, dust, and other contaminants.',
+  publishDate: '2026-06-25T11:35:00.000Z',
+  author: 'HygiGuard Expert',
+  image: '/assets/images/services/lucknow/sofa-dry-cleaning.png',
+  imageAlt: 'Sofa dry cleaning in Lucknow',
+  tags: ['Sofa Dry Cleaning', 'Tips'],
+  content: `
+    <h2>Why Sofa Dry Cleaning is Important</h2>
+    <p>Sofa dry cleaning is important because it helps to remove dirt, dust, and other contaminants from sofas. It is a safe and effective way to clean sofas and remove dirt, dust, and other contaminants.</p>
+  `
   },
 ];
 
