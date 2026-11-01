@@ -1,5 +1,3 @@
-import { title } from "process";
-
 export interface BlogPost {
   slug: string;
   title: string;
@@ -16,8 +14,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'why-professional-sofa-cleaning-is-essential',
     title: 'Why Professional Sofa Cleaning is Essential for Your Home',
-    summary: 'Discover the hidden dangers lurking in your upholstery and why vacuuming isn\'t enough to keep your family safe from allergens.',
-    publishDate: '2026-06-16T08:00:00Z', 
+    summary:
+      "Discover the hidden dangers lurking in your upholstery and why vacuuming isn't enough to keep your family safe from allergens.",
+    publishDate: '2026-06-16T08:00:00Z',
     author: 'HygiGuard Expert',
     image: '/assets/images/services/lucknow/sofa-cleaning.png',
     imageAlt: 'Professional sofa cleaning in progress',
@@ -38,12 +37,13 @@ export const BLOG_POSTS: BlogPost[] = [
       </ul>
       
       <p>Don't wait until stains become permanent. Schedule your professional sofa cleaning today and experience the HygiGuard difference.</p>
-    `
+    `,
   },
   {
     slug: 'carpet-cleaning-myths-busted',
     title: 'Top 5 Carpet Cleaning Myths Busted',
-    summary: 'Does cleaning your carpet make it get dirty faster? We debunk the most common myths about professional carpet cleaning.',
+    summary:
+      'Does cleaning your carpet make it get dirty faster? We debunk the most common myths about professional carpet cleaning.',
     publishDate: '2026-06-20T11:35:00.000Z',
     author: 'HygiGuard Expert',
     image: '/assets/images/services/lucknow/carpet-cleaning.png',
@@ -58,32 +58,34 @@ export const BLOG_POSTS: BlogPost[] = [
       
       <h2>Myth 3: Vacuuming Once a Week is Enough</h2>
       <p>While vacuuming is great, it doesn't remove the sticky soils and oils that bind to the fibers. Professional deep cleaning is required every 6-12 months.</p>
-    `
+    `,
   },
   {
-  slug: 'sofa-dry-cleaning-in-lucknow',
-  title: 'Sofa Dry Cleaning in Lucknow',
-  summary: 'Sofa dry cleaning in Lucknow is a process of cleaning sofas without using water. It is a safe and effective way to clean sofas and remove dirt, dust, and other contaminants.',
-  publishDate: '2026-06-25T11:35:00.000Z',
-  author: 'HygiGuard Expert',
-  image: '/assets/images/services/lucknow/sofa-dry-cleaning.png',
-  imageAlt: 'Sofa dry cleaning in Lucknow',
-  tags: ['Sofa Dry Cleaning', 'Tips'],
-  content: `
+    slug: 'sofa-dry-cleaning-in-lucknow',
+    title: 'Sofa Dry Cleaning in Lucknow',
+    summary:
+      'Sofa dry cleaning in Lucknow is a process of cleaning sofas without using water. It is a safe and effective way to clean sofas and remove dirt, dust, and other contaminants.',
+    publishDate: '2026-06-25T11:35:00.000Z',
+    author: 'HygiGuard Expert',
+    image: '/assets/images/services/lucknow/sofa-dry-cleaning.png',
+    imageAlt: 'Sofa dry cleaning in Lucknow',
+    tags: ['Sofa Dry Cleaning', 'Tips'],
+    content: `
     <h2>Why Sofa Dry Cleaning is Important</h2>
     <p>Sofa dry cleaning is important because it helps to remove dirt, dust, and other contaminants from sofas. It is a safe and effective way to clean sofas and remove dirt, dust, and other contaminants.</p>
-  `
+  `,
   },
 ];
 
 // Helper function to get only published blogs, sorted by date descending
 export const getPublishedBlogs = (): BlogPost[] => {
   const now = new Date();
-  return BLOG_POSTS
-    .filter(blog => new Date(blog.publishDate) <= now)
-    .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime());
+  return BLOG_POSTS.filter((blog) => new Date(blog.publishDate) <= now).sort(
+    (a, b) =>
+      new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
+  );
 };
 
 export const getBlogBySlug = (slug: string): BlogPost | undefined => {
-  return BLOG_POSTS.find(blog => blog.slug === slug);
+  return BLOG_POSTS.find((blog) => blog.slug === slug);
 };
