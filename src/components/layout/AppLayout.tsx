@@ -5,6 +5,7 @@ import { Header } from './Header';
 import { Footer } from './Footer';
 import { FloatingCTA } from './FloatingCTA';
 import { CartProvider } from '@/context/CartContext';
+import GoogleLocation from '../sections/GoogleLocation';
 
 export function AppLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -14,6 +15,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
     <CartProvider>
       {!isBilling && <Header />}
       <main className="flex-1">{children}</main>
+      {!isBilling && <GoogleLocation />}
       {!isBilling && <Footer />}
       {!isBilling && <FloatingCTA />}
     </CartProvider>
